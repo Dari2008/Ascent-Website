@@ -1,0 +1,98 @@
+@use "../../src/scss/Variables.scss" as *;
+@use "../../src/scss/Settings.scss" as *;
+@use "../../src/scss/bgStyles.scss" as *;
+@use "./aboutUs.scss" as *;
+@use "../../src/scss/clamp.scss" as *;
+@use "sass:math";
+
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+body{
+    display: grid;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+svg{
+    width: 100%;
+    min-height: 30vh;
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 2em;
+
+}
+
+.text {
+    @extend .defaultElementOnMainPage;
+    @extend .defaultMainElement;
+}
+
+h1 {
+    font-family: "Agrandir Bold";
+    font-size: clampW(2em, 3.5em, 200px, 2000px);
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.headerImage{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    height: 100vh;
+}
+
+.headerDiv{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+}
+
+.headerDiv::after{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 30%;
+    bottom: 0px;
+    left: 0px;
+    background: $imageFadeOut;
+}
+
+.teamColor{
+    color: $teamColor;
+}
+
+@media (width < #{600 * math.div($iframeWidthInPercent, 100%)}px){
+    .headerDiv, .headerImage{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/7;
+    }
+}
+
+@media (width < 800px){
+    .visible .headerDiv, .visible .headerImage{
+        aspect-ratio: 16/9 !important;
+        width: 100%;
+        height: auto;
+    }
+}

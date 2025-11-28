@@ -1,0 +1,10 @@
+@use "./Variables.scss" as vars;
+
+a{
+    color: vars.$teamColor;
+    text-decoration: none;
+}
+
+a:hover{
+    color: darken(vars.$teamColor, 20%);
+}

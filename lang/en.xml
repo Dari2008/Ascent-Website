@@ -1,0 +1,405 @@
+<en>
+    <mainTitle>We are German Vice Champions</mainTitle>
+    <navigationTitles>
+        <home>Home</home>
+        <competition>Competition</competition>
+        <aboutUs>About Us</aboutUs>
+        <theCar>The Car</theCar>
+        <sponsoring>Sponsoring</sponsoring>
+        <news>News</news>
+        <contact>Contact</contact>
+    </navigationTitles>
+
+    <otherTitles>
+        <timeUntilWorldchampionship>Time Until Awards Ceremony:</timeUntilWorldchampionship>
+    </otherTitles>
+    
+    <clickOutside>Click outside of the window to close it</clickOutside>
+
+    <carReveal>
+        <theArrow2>The Arrow2</theArrow2>
+        <theArrow2Text>The Arrow2 was our car to the German championship. It crossed the finish line after 1.153 seconds and only weighs 55.1g with a length of 23.9cm.</theArrow2Text>
+    </carReveal>
+
+    <specialAwards>
+        <fastestCar>fastest Car</fastestCar>
+        <bestPortfolioCompany>best portfolio enterprise</bestPortfolioCompany>
+        <bestPortfolioTechnology>bestes electronic portfolio</bestPortfolioTechnology>
+        <constructionPrice>construction price</constructionPrice>
+        <bestPresentation>best oral presentation</bestPresentation>
+    </specialAwards>
+
+    <shortTexts>
+        <whatIsStemRacing><a href="https://www.stemracing.com" target="_blank">STEM Racing</a> is the worlds largest technology competition for students. It focuses on building a miniature Formular 1 car</whatIsStemRacing>
+        <aboutUs>We are the STEM Racing Team 'Ascent' from Hamburg, Germany and are going to the World Finals 2025 in Singapore. </aboutUs>
+        <theCar>This is our Arrow2, the car that helped us secure the title of the German Vice Champion. It&#8217;s the result of constant testing via CAE analysis, wind tunnel testing and real test drives.</theCar>
+        <sponsoring>We are looking for sponsors for the World Finals in Singapore.</sponsoring>
+        <gofundme>Support us on our journey to the STEM Racing World Finals in Singapore and help us succeed.</gofundme>
+    </shortTexts>
+
+    <newsArticles>
+        <titles>
+            <prepDM>Preparations for the German Championship</prepDM>
+            <weAreGermanViceChampion>We are German Vice Champions</weAreGermanViceChampion>
+            <weAreHamburgerChapion>We are Hamburger champion!</weAreHamburgerChapion>
+            <colorChange>Ascent Rebrand</colorChange>
+        </titles>
+        <colorChangeText>
+            Ascent goes Magenta! We&#x2019;ve updated our visual identity. As part of the rebranding, we made minor 
+            adjustments to the geometry of our logo to give it a cleaner, more modern look. Alongside this, we&#x2019;ve 
+            changed our main team color from purple to a bold new magenta tone.
+            <br/>
+            <br/>
+            <strong>These changes are exclusively cosmetic - our passion, values, and goals remain the same.</strong>
+        </colorChangeText>
+        <germanViceText>          
+            On May 17th, we proudly became German Vice Champions and qualified for the Singapore World Finals 2025.
+            The German Championship was an amazing experience. We met lots of kind and inspiring teams, and our car hit a run time of 1.155 seconds.
+            A huge thank you to all our sponsors for making this possible. It was especially great to meet some of them, the Wilhelm Stemmer Stiftung and Ansys, at the event.
+            We are now looking forward to continuing our journey and head to Singapore with Blue Wolves and Echo Racing. Let&#8217;s go Team Germany!
+        </germanViceText>
+        <weAreHamburgerChapionText> At the Hamburger championship on the 22<sup>th</sup> of February 2025 we were able to win the first place and qualify for the German championship.
+            Our car was the fastest of them all with a time of 1.203 seconds. We also won 5 special prices:
+        </weAreHamburgerChapionText>
+        <prepForDM>
+            After winning the Hamburg Championship, we immediately started preparations for the German Championship the next day.
+            At the kickoff meeting, we established slightly adjusted responsibilities and carried out time and budget planning.
+            Currently, we are actively working on a prototype and sponsor acquisition.
+            We are improving our laser measurement system and making initial decisions regarding our team booth.
+        </prepForDM>
+    </newsArticles>
+
+    <contactFormular>
+        <contactUsNow>Contact Us Now!</contactUsNow>
+        <sendMessage>Send</sendMessage>
+        <messageSent>Sent</messageSent>
+        <telephone>telephone:&#160;<a
+                    href="tel: +49 15206532230">+49 152 0653 2230<span class="mobileSecondPart"> -
+                        Benjamin Hillmann</span></a></telephone>
+        <yourName type="placeholder">Your Name</yourName>
+        <yourEmail type="placeholder">Your E-mail address</yourEmail>
+        <yourMessage type="placeholder">Message</yourMessage>
+    </contactFormular>
+
+    <footer>
+        <menu>Menu</menu>
+        <contact>Contact</contact>
+        <subscribe>Subscribe</subscribe>
+        <subscribed>Subscribed!</subscribed>
+        <imprint>Imprint</imprint>
+        <yourEmail type="placeholder">Your E-mail address</yourEmail>
+        <newsletter>Newsletter</newsletter>
+        <privacyPolicy>Privacy Policy</privacyPolicy>
+        <allRightsReserved>Ascent. All Rights Reserved.</allRightsReserved>
+    </footer>
+
+    <countdown>
+        <days>Days</days>
+        <hours>Hours</hours>
+        <minutes>Minutes</minutes>
+        <seconds>Seconds</seconds>
+    </countdown>
+
+    <readMoreTexts>
+        <readMore>Read more</readMore>
+        <getToKnowUs>Get to know us</getToKnowUs>
+        <learnMore>Learn More</learnMore>
+        <openGallery>Open Gallery</openGallery>
+    </readMoreTexts>
+    
+    <aboutUs>
+        <titles>
+            <teammanager>Team Manager</teammanager>
+            <designer>Design Engineer</designer>
+            <graphicDesignAndRenderings>Graphic Designer</graphicDesignAndRenderings>
+            <itAndTeamstand>IT &amp; Pit Display</itAndTeamstand>
+            <marketingManager>Marketing Manager</marketingManager>
+            <manufacturingEngineer>Manufacturing Engineer</manufacturingEngineer>
+        </titles>
+        <title>About Us</title>
+        <text>
+            We are Team Ascent from Hamburg!<br />
+            Our team consists of six students from <a href="https://www.grootmoor.de" target="_blank">Gymnasium Grootmoor</a>, and together we have one goal: to become World champion. 
+            We named our team "Ascent" because the name symbolizes our <color class="teamColor">motivation to rise</color> - the constant drive to develop ourselves, aim higher, and grow beyond our 
+            limits together. Our race car is called "Arrow2", reflecting our mindset: <color class="teamColor">precision, speed, and a clear direction</color> - always moving forward. Our logo features 
+            two upward-pointing arrowheads that symbolize ascent. At the same time, you can also recognize the <color>"A" from Ascent</color> in the logo. We chose our signature shade 
+            of purple, <color class="teamColor">#c53cf5</color>, because it truly sets us apart and embodies the feeling of speed.
+        </text>
+        <personIntroduction>
+            <benjamninText>
+                As the team and project manager, I am responsible for task management, setting 
+                and meeting deadlines, as well as acquiring and supporting our sponsors. I also coordinate communication within the team.
+                I always keep track of all tasks and continuously keep my teammates up to date.
+                In my free time, I enjoy playing tennis and the saxophone.
+            </benjamninText>
+
+            <florianText>
+                I take on the role of design engineer in our team.
+                This makes me primarily responsible for developing our car using the CAD software Solid Edge, in compliance with the competition rules.
+                I regularly carry out both virtual and real-world analyses of prototypes and test vehicles.
+                An important part of my work also involves conducting research to support the design process.
+                In my free time, I enjoy rowing and volunteering with the scouts.
+            </florianText>
+
+            <kjellText>
+                I am responsible for our team's graphic design, especially the portfolios.
+                I also create renderings of the car and produce our car reveal.
+                Outside of STEM Racing, I enjoy flying FPV drones and I'm actively involved in the youth fire brigade.
+            </kjellText>
+
+            <dariusText>
+                My areas of responsibility are IT, the team booth, and electronics.
+                I programmed and soldered our testing system and will design and build our team booth for the World Championship.
+                In my free time, I enjoy inline skating.
+            </dariusText>
+
+            <moritzText>
+                During the preparations, I focus on the second most important element of the competition: the presentation.
+                My hobbies are playing the piano and darts.
+            </moritzText>
+
+            <vincentText>
+                I joined Team Ascent after the Hamburg Championship.
+                Since then, I have been managing our social media channels and designing all posts using Adobe Creative Cloud.
+                I also support Darius with the team booth.
+            </vincentText>
+        </personIntroduction>
+    </aboutUs>
+
+    <imprint>
+        <titles>
+            <disclaimer>Disclaimer - Legal Notice</disclaimer>
+            <warning>§ 1 Content Warning Notice</warning>
+            <externalLinks>§ 2 External Links</externalLinks>
+            <copyright>§ 3 Copyright and Related Rights</copyright>
+            <specialtermsOfUse>§ 4 Special Terms of Use</specialtermsOfUse>
+        </titles>
+        <titleDoc>Imprint - Ascent</titleDoc>
+        <title>Imprint</title>
+        <responsible>
+            <strong>Responsible for the content</strong> (<span class="clamps">according to § 55 para. 2 RStV</span>) is
+            the entire Team Ascent
+        </responsible>
+        <text1>
+            The free and publicly accessible content of this website has been created with the greatest possible care. 
+            However, the provider of this website assumes no liability for the accuracy and timeliness of the free and publicly 
+            accessible journalistic advice and news provided.
+            Articles identified by name reflect the opinion of the respective author and not necessarily the opinion of the provider.
+            Merely by accessing the free and publicly accessible content, no contractual relationship is established between the user 
+            and the provider; in this respect, there is a lack of intent to be legally bound by the provider.
+        </text1>
+        <text2>
+            This website contains links to third-party websites (<span class='clamps'>'external links'</span>).  
+            These websites are subject to the liability of their respective operators. The provider checked the external content for possible legal violations when the external links were first created. At that time, no legal violations were apparent.  
+            The provider has no influence on the current and future design or content of the linked websites. The inclusion of external links does not imply that the provider adopts the content behind the reference or link as their own.  
+            Continuous monitoring of external links by the provider without specific indications of legal violations is unreasonable. However, such external links will be deleted immediately upon gaining knowledge of any legal violations.
+        </text2>
+        <text3>
+            The content published on this website is subject to German copyright and related rights law.  
+            Any use not permitted by German copyright and related rights law requires the prior written consent of the provider or the respective rights holder.  
+            This applies in particular to duplication, editing, translation, storage, processing, or reproduction of content in databases or other electronic media and systems.  
+            Content and rights of third parties are identified as such.  
+            Unauthorized duplication or distribution of individual contents or entire pages is not permitted and is punishable by law.  
+            Only the production of copies and downloads for personal, private, and non-commercial use is allowed.
+        </text3>
+        <iframe>The display of this website in external frames is only permitted with written permission.</iframe>
+        <text4>
+            If special conditions for individual uses of this website differ from the aforementioned paragraphs, this will be explicitly indicated at the appropriate place.  
+            In such cases, the special terms of use apply in each individual instance.
+        </text4>
+        <source>Source</source>
+    </imprint>
+
+    <privacyPolicy>
+        <titles>
+            <informationCollection>1. Information We Collect</informationCollection>
+            <howUseInformation>2. How We Use Your Information</howUseInformation>
+            <cookies>3. Cookies</cookies>
+            <thirdPartylinks>4. Third-Party Links and Sponsors</thirdPartylinks>
+            <dataSecurity>5. Data Security</dataSecurity>
+            <yourRights>6. Your Rights</yourRights>
+            <changes>7. Changes to This Privacy Policy</changes>
+            <translationDisclaimer>8. Translation Disclaimer</translationDisclaimer>
+            <contactUs>9. Contact Us</contactUs>
+        </titles>
+        <titleDoc>Privacy Policy - Ascent</titleDoc>
+        <title>Privacy Policy</title>
+        <welcome>Welcome to the website of Ascent (<a href="//">https://ascent-racing.com</a>), a Stem-Racing (former Formula 1 in Schools) team. We respect your privacy and are committed to protecting your personal data. This privacy policy outlines how we handle your personal information when you visit our website.</welcome>
+        <text1>When you visit our website, we may collect the following information:</text1>
+        <text11><strong>Personal Information:</strong> If you contact us via our contact form or email, we may collect your name, email address, and any other details you provide.</text11>
+        <text12><strong>Non-Personal Information:</strong> This includes technical data such as your IP address, browser type, other device information and browsing history on our site.</text12>
+        <text2>We may use the information we collect from you in the following ways:</text2>
+        <text21><strong>To Improve Our Website:</strong> We continually strive to enhance our website based on the information and feedback we receive from you.</text21>
+        <text22><strong>To Respond to Inquiries:</strong> If you contact us, we will use your personal data to reply to your inquiry.</text22>
+        <text23><strong>To Manage Sponsors and Partnerships:</strong> We may share relevant information with our sponsors as part of our partnership agreements, but we will never share your personal information without your consent.</text23>
+        <text3>Our website uses cookies to enhance your browsing experience. Cookies are small files that a site or its service provider transfers to your computer&#8217;s hard drive through your web browser (if you allow) that enables the site&#8217;s systems to recognize your browser and capture and remember certain information.</text3>
+        <text31><strong>Performance Cookies:</strong> These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</text31>
+        <text32><strong>Targeting Cookies:</strong> We may use these cookies to make the website more relevant to you and to show you relevant sponsorships and ads from our partners.</text32>
+        <text33><strong>Essential Cookies:</strong> These cookies are necessary for the website to function and cannot be switched off in our systems.</text33>
+        <text34>Types of Cookies We Use:</text34>
+        <byUsingOurSite>By using our website, you consent to the use of cookies. You can manage your cookie preferences through the cookie banner that appears on our website. Additionally, you can control or delete cookies through your browser settings.</byUsingOurSite>
+        <text4>Our website may include links to third-party websites, including our sponsors&#8217; websites. Please be aware that we are not responsible for the privacy practices of these external sites. We encourage you to read the privacy policies of any third-party sites you visit.</text4>
+        <text5>We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure, so we cannot guarantee absolute security.</text5>
+        <youHaveRights>You have the right to:</youHaveRights>
+        <text61>Access, correct, or delete your personal data that we hold.</text61>
+        <text62>Object to the processing of your personal data.</text62>
+        <text63>Withdraw your consent at any time.</text63>
+        <contactUsAt>If you wish to exercise any of these rights, please contact us at <a href="mailto:team@ascent-racing.com">team@ascent-racing.com</a> or through our contact form at <a href="//contact">https://ascent-racing.com/contact</a>.</contactUsAt>
+        <textChanges>We may update this privacy policy from time to time. Any changes will be posted on this page, and the date of the latest revision will be indicated at the top of the policy.</textChanges>
+        <translation>This privacy policy may be translated into other languages for convenience. However, the original English version shall prevail in the event of any discrepancies between the translations. If you have any questions or need clarification on any aspect of this policy, please contact us at <a href="mailto:team@ascent-racing.com">team@ascent-racing.com</a>.</translation>
+        <questions>If you have any questions or concerns about this privacy policy, please contact us at:</questions>
+        <using><strong>By using this website:</strong> You acknowledge that you have read and understood this privacy policy.</using>
+        <effective>This policy is effective as of <u><b>08.09.2024</b></u>.</effective>
+    </privacyPolicy>
+
+    <sponsoring>
+        <title>Sponsoring</title>
+        <text>
+            To successfully participate in the World Finals, we rely on strong
+            partners and sponsors. The costs for travel, accommodation
+            and, of course, the production of our cars, etc. are significant, and as a
+            student team, we are unable to cover them on our own. 
+            <br />
+            In exchange
+            we can offer you various benefits, like e.g. placing your logo on our cars.
+        </text>
+        <currentSponsorings>These firms already supported us:</currentSponsorings>
+        <world>World Championship</world>
+        <german>German Championship</german>
+        <hamburger>Hamburger Championship</hamburger>
+        <textAboutBank>
+            If your company is interested in sponsoring us, please feel free to contact us to discuss the details
+            in person. As a private individual, you can also make a donation directly to the following account of
+            our school&#8217;s support association, using the payment reference “STEM Racing Team Ascent.” If you
+            require a donation receipt, please include your address in the payment reference as well.
+        </textAboutBank>
+    </sponsoring>
+
+    <theCar>
+        <titleDoc>The Car</titleDoc>
+        <title>The Car</title>
+        <titles>
+            <forwardThrust>Forward thrust from the CO2 cartridge</forwardThrust>
+            <airResistance>Air resistance</airResistance>
+            <frictionOfWheels>Friction of wheels while rotating</frictionOfWheels>
+
+            <earodynamics>Aerodynamic improvements (CFD analysis)</earodynamics>
+            <redirectionAirflow>Redirection of airflow behind the front wheels</redirectionAirflow>
+            <concaveSidePod>Concave Side Pod</concaveSidePod>
+            <largelyConvexSidePod>Largely Convex Side Pod</largelyConvexSidePod>
+            <lcspwasf>Largely Convex Side Pod with Additional Side Foil</lcspwasf>
+
+            <weightReduction>Weight reduction</weightReduction>
+            <stabilityComponents>Stability of components (FEA)</stabilityComponents>
+        </titles>
+        <variants>In the following sections different side pod designs are shown:</variants>
+        <introText>
+            To appropriately understand the design of our car, we first have to clarify what forces apply on the car.
+        </introText>
+
+        <forwardThrustText>
+            Stored in the cartridge are 8 grams of CO2 gas. As space in the chamber is limited, the gas inside is compressed and the pressure is high. When the cartridge is penetrated, gas releases at the back of the container. With Newton&#8217;s third law of motion (actio = reactio) it can be explained that the motion of the gas in one direction leads to a motion of the car into the other direction.
+        </forwardThrustText>
+
+        <airResistanceText>
+            Enzo Ferrari once said, “Aerodynamics are for people who can&#8217;t build engines.”
+            Due to the technical regulations implemented by STEM Racing we&#8217;re not allowed to modify the accelerating force. Therefore, the quote from Enzo Ferrari doesn&#8217;t apply for STEM Racing and we focus on minimizing drag and optimizing components to ensure a fast track time without modifying the accelerating force.
+            To minimize the drag coefficient, which is a value that puts into number, how streamlined an object is, we use various CFD analysis techniques. CFD stands for Computational Fluid Dynamics and one of the techniques we use is the combined flow visualisation. It combines the conventional streamline visualisation with the vector contour plot. The advantage of this technique is that it brings together both concepts to get a better understanding of the air&#8217;s direction of movement and at what speed the air moves. With this knowledge we can optimise the shape of the car&#8217;s components to make them more streamlined (= lower the drag coefficient). Another technique we use is the drag analysis. With this type of CFD analysis you can calculate the drag coefficient. Additionally, there are various other important CFD analysis techniques that we will not discuss here.
+        </airResistanceText>
+
+        <frictionOfWheelsText>
+            Another force stopping the car is the friction between the rotating wheels and the fixed part of the axle construction. To minimise the friction between these components, we use ball bearings. Testing different ball bearings and axle constructions is a crucial part of real-life testing, because it is hardly possible to simulate the axial forces acting on the ball bearings and the wear of different ball bearing models and manufacturers.
+        </frictionOfWheelsText>
+
+        <introTextDesignProcess>
+            To get a better understanding of our design process, we sectioned it into three aspects:
+        </introTextDesignProcess>
+
+        <earodynamicsText>
+                Aerodynamic research and development (CFD analysis)<br/>
+                In this section we will show you our design process on the example of our side pods.
+                To understand the design of our car&#8217;s side pods, we first need to clarify their function.
+        </earodynamicsText>
+
+        <redirectionAirflowText>
+            The primary goal of the side pod is to guide the airflow behind the open volume of the front wheels away
+            from the rear wheels. Additionally, the side pods should prevent the unavoidable turbulent air created
+            in the wake of the front wheels from interfering with laminar flow areas further downstream.
+        </redirectionAirflowText>
+
+        <outwardFlowingSidePodText>
+            The most straightforward side pod concept redirects the turbulent airflow behind the front wheels outward. This setup allows for the creation of a clean tunnel in the centre of the car in which no turbulence occurs. However, the combined flow visualisation shows that the turbulent wake behind the wheels is directed outwards by the side pod, still affecting surrounding regions.
+        </outwardFlowingSidePodText>
+
+        <concaveSidePod>
+            Our first idea was to extend
+            the ramp to its maximum width while
+            retaining the concave profile.
+        </concaveSidePod>
+
+        <largelyConvexSidePod>
+            In the following version, the ramp
+            was reshaped from concave into a
+            largely convex form, which resulted in
+            a reduction in drag.
+        </largelyConvexSidePod>
+
+        <lcspwasf>
+            Building on this, a third configuration
+            added a side foil to guide the airflow
+            more effectively around the rear wheel
+            but this led to a slightly higher drag
+            due to interferences between the side
+            foil and the side pod.
+        </lcspwasf>
+
+        <weightReductionText>
+            As there is a fixed amount of force emitted from the CO2 cartridge, it is important to make the car as lightweight as possible while still maintaining the minimum weight of 55 grams. Newton &#8217;s second law of motion (F = ma) describes that the less an object weighs, the higher is its acceleration when applying a certain force.
+            To reach the minimum weight of the cars, we make them hollow on the inside to save weight. As the freedom of design is very good, we use SLS printing to produce our chassis. It is easier than milling it with polyurethane (special hard foam block) because there are less parameters to consider.
+        </weightReductionText>
+
+        <stabilityComponentsText>
+            To continually make sure that the wheels, the halo and other components are stable enough to withstand the pressure of impact, we virtually test them with the FEA.
+            The Finite Element Analysis is a simulation that predicts how structures react to forces like stress, heat and vibration. Complex models are divided into smaller elements, forces applying on the car are defined and equations, considering the structural integrity of materials, are solved. After solving the simulation, it is shown if the material is strong enough to withstand a certain force.
+        </stabilityComponentsText>
+    </theCar>
+
+    <whatIsStemracing>
+        <titleDoc>What is STEM Racing</titleDoc>
+        <title>What is STEM Racing?</title>
+        <text>STEM Racing, formerly known as F1 in Schools, is the world&#8217;s largest STEM competition for students aged 11 to 19. Participants compete in various categories, including:</text>
+        <text1>
+            Designing and manufacturing a miniature Formula 1 car powered by CO<sub>2</sub> cartridges
+        </text1>
+        <text2>Creating three detailed portfolios (Project Management, Enterprise, and Design &amp; Engineering)</text2>
+        <text3>Building a pit display</text3>
+        <text4>Delivering a 10-minute presentation</text4>
+        <text5>
+            Each project element is judged and awarded points. The car is scored based on race times and results from the scruitineering process. The overall winner is determined by the total number of points achieved.
+            The competition consists of several levels: Regional, National, and World Finals. Winning teams at each level qualify for the next stage.
+        </text5>
+    </whatIsStemracing>
+
+    <gofundme>
+        <whyWeNeedYourHelp>
+            <span class="teamColor agrandir">Why we need your help:</span>
+            <br />
+            With competing, there are significant costs involved: 
+        </whyWeNeedYourHelp>
+        <registrationFees>We need to pay around 10,600€ for registration</registrationFees>
+        <travelCosts>About 19,000€ for our rooms at the official competition hotel</travelCosts>
+        <whyWeNeedYourHelpPart2>
+            Our calculated total budget will be around 50k.
+            We are a team of six 10th grade students and cannot cover these expenses on our own. We are actively seeking sponsors and supporters - and this is where we need you.
+            We must book our rooms in the official competition hotel within the next 3 weeks. If we can't secure the necessary funds in time, we won't be able to participate in the World Finals. 
+        </whyWeNeedYourHelpPart2>
+        <openGoFundMe>Open GoFundMe</openGoFundMe>
+        <donateNow>Donate Now!</donateNow>
+    </gofundme>
+
+    <gallery>
+        <titleDoc>Gallery - Team Ascent</titleDoc>
+        <title>Gallery</title>
+    </gallery>
+
+</en>

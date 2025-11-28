@@ -1,0 +1,65 @@
+<script>
+    const elements = document.querySelectorAll(".swiper");
+    for(const e of elements){
+        shuffelElements(e);
+    }
+
+    function startSwiperRotation(){
+        const elements = document.querySelectorAll(".swiper");
+        for(const e of elements){
+            onSlideChange(e);
+        }
+    }
+
+    function shuffelElements(element) {
+        const slides = Array.from(element.children);
+        for (let i = slides.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [slides[i], slides[j]] = [slides[j], slides[i]];
+        }
+        element.innerHTML = '';
+        slides.forEach(slide => element.appendChild(slide));
+    }
+
+    function onSlideChange(swiper){
+        const wait = ()=>{
+            swiper.swiper.slideNext();
+            const time = generateNewSlideTime();
+            setTimeout(wait, time);
+        }
+        wait();
+    }
+
+    function generateNewSlideTime(){
+        const max = 2000;
+        const min = 2000;
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
+
+
+<link rel="stylesheet" href="/sponsoringRows/scss/allStyles.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script>
+    window.addEventListener("resize", () => {
+        calc();
+    });
+
+    const calc = () => {
+        const elements = document.querySelectorAll(".swiper");
+        for(const e of elements){
+            e.slidesPerView = Math.floor(window.innerWidth / 350);
+        }
+    };
+    calc();
+    startSwiperRotation();
+    let swipers = document.querySelectorAll(".swiper");
+
+    for(swiper of swipers){
+        swiper.swiper.slideNext()
+    }
+
+
+
+</script>

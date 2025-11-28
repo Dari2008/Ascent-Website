@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <link rel="preload" href="./src/fonts/AgrandirBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./src/fonts/AgrandirRegular.otf" as="font" type="application/x-font-opentype">
+  <link rel="preload" href="./src/imgs/showImageFullScreen/Car.svg" as="font" type="image/svg+xml">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/icons/favicon-16x16.png">
+  <link rel="manifest" href="./src/icons/site.webmanifest">
+  <link rel="shortcut icon" href="./src/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./src/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title class="title">Team Ascent</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./src/scss/allStyles.css'>
+  <script type="module" src='./src/ts/index.ts' defer></script>
+  <script type="module" src='./src/ts/languageElement.ts'></script>
+
+  <!-- Search engine -->
+  <meta name="title" content="Ascent - F1 in schools" />
+  <meta name="description"
+    content="Wir sind das Team Ascent, eine Gruppe von fünf leidenschaftlichen Schülern, die am internationalen Wettbewerb Stem-Racing (ehemalig F1 in Schools) teilnehmen." />
+  <meta name="keywords"
+    content="Ascent Racing, Racing, Team, Racing Team, Racing Team Ascent, Ascent, Racing, Stem Racing, Stem, Miniatur, Auto, Minatur Auto" />
+  <meta name="author" content="Ascent" />
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="3 days" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KP68B24P');
+  </script>
+
+</head>
+
+<body onload="//document.getElementById('mainLoadingScreen').classList.add('hide');">
+
+
+  <div id="countdown">
+    <script>
+      window.addEventListener("load", () => {
+        if (sessionStorage.getItem('countdown') == null) {
+          sessionStorage.setItem('countdown', "true");
+        }
+
+        if (sessionStorage.getItem('countdown') == "true") {
+          const countdown = document.getElementById('countdown');
+          countdown.classList.add('visible');
+
+          countdown.addEventListener("transitionend", function (e) {
+            if (countdown.classList.contains('visible')) {
+              return;
+            }
+            countdown.classList.add('hidden');
+
+          });
+
+          document.getElementById("closeBtnCountdown").addEventListener("click", function () {
+            countdown.classList.remove('visible');
+            countdown.classList.remove('hidden');
+            sessionStorage.setItem('countdown', "false");
+          });
+
+        }
+      });
+    </script>
+    <p><lang-element path="timeUntilWorldchampionship">Time Until World Championship:</lang-element></p>
+    <embed src="./src/imgs/countdown/Countdown.svg" alt="Countdown" id="countdownEmbed">
+    <button class="close" id="closeBtnCountdown">
+      <span class="plus">+</span>
+    </button>
+  </div>
+
+  <nav id="navBar">
+    <img id="logo" src="./src/imgs/LogoQuer.svg" alt="Ascent Logo" async>
+    <div id="navButtons">
+      <a class="navButton" id="homeBtn"><lang-element path="home">Home</lang-element></a>
+      <a class="navButton" id="competitionBtn"><lang-element path="competition">Competition</lang-element></a>
+      <a class="navButton" id="newsBtn"><lang-element path="news">News</lang-element></a>
+      <a class="navButton" id="aboutUsBtn"><lang-element path="aboutUs">About Us</lang-element></a>
+      <a class="navButton" id="sponsoringBtn"><lang-element path="sponsoring">Sponsoring</lang-element></a>
+      <a class="navButton" id="contactBtn"><lang-element path="contact">Contact</lang-element></a>
+    </div>
+    <div id="slideUnderline"></div>
+  </nav>
+
+  <nav id="navMobile">
+    <div class="hamburger-icon" id="icon">
+      <div class="icon-1" id="a"></div>
+      <div class="icon-2" id="b"></div>
+      <div class="icon-3" id="c"></div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="menuSide">
+      <img id="logoMobile" src="./src/imgs/LogoQuer.svg" alt="Ascent Logo">
+      <div id="navButtonsMobile">
+        <a class="navButtonMobile" id="homeBtnMobile"><lang-element path="home">Home</lang-element></a>
+        <a class="navButtonMobile" id="competitionBtnMobile"><lang-element path="competition">Competition</lang-element></a>
+        <a class="navButtonMobile" id="newsBtnMobile"><lang-element path="news">News</lang-element></a>
+        <a class="navButtonMobile" id="aboutUsBtnMobile"><lang-element path="aboutUs">About Us</lang-element></a>
+        <a class="navButtonMobile" id="sponsoringBtnMobile"><lang-element path="sponsoring">Sponsoring</lang-element></a>
+        <a class="navButtonMobile" id="contactBtnMobile"><lang-element path="contact">Contact</lang-element></a>
+      </div>
+    </div>
+
+    <div id="otherSide"></div>
+
+  </nav>
+
+  <div id="imageFullScreen">
+    <img alt="">
+    <div class="loadingScreen">
+      <embed src="./src/imgs/showImageFullScreen/Car.svg" alt="Fahrendes Miniatur Auto ">
+    </div>
+    <p><lang-element path="clickOutside">Click outside of the window to close it</lang-element></p>
+  </div>
+
+  <div id="carReveal">
+    <!-- <video class="carRevealVideo" loop disablepictureinpicture autoplay>
+      <source src="./src/videos/CarReveal.mov" type="video/mov">
+      <source src="./src/videos/CarReveal.mp4" type="video/mp4">
+    </video> -->
+    <img class="carRevealVideo" loading="lazy" src="./src/imgs/carReveal/vorF1Car.jpg" alt="Gruppenfoto">
+    <!-- <img class="carRevealVideo" src="./src/imgs/carReveal/8k Rendering.png" alt="Gruppenfoto"> -->
+    <div id="uiAboveVideo">
+      <h1><lang-element path="theArrow2">The Arrow2</lang-element></h1>
+
+      <p><lang-element path="theArrow2Text">The Arrow2 was our car to the German championship. It crossed the finish line after 1.153 seconds and only wights 55.1g with a length of 23.9cm.</lang-element></p>
+    </div>
+    <p id="subtitle">
+      Team Ascent are German Vice Champions
+    </p>
+  </div>
+
+  <div id="whatIsSTEMRacing">
+    <h1 class="title"><lang-element path="competition">Competition</lang-element></h1>
+    <img loading="lazy" src="./src/imgs/StemRacingLogo.png" alt="Stem Racing Logo">
+    <p>
+      <lang-element path="whatIsSTEMRacingText">
+        STEM Racing (<a href="https://www.stemracing.com" target="_blank">www.stemracing.com</a>, formerly known as
+        F1 in Schools) is a multi disciplinary international competition in witch students within the age of 11 to 19 design and build a miniature racing car.
+        The car is powered by a CO2 cartridge and has to be build within the rules of the competition. The car is then raced on a 20m long track against other teams.
+        The competition is not only about the car, but also about the presentation of the project. This includes three portfolios, a presentation and a team stand.
+        The competition has been around for many years and is held in many countries around the world. This year it was renamed into STEM Racing.
+      </lang-element>
+    </p>
+  </div>
+
+  <div id="news">
+    <h1><lang-element path="news">News</lang-element></h1>
+
+    <div id="wonDM">
+      <h2><lang-element path="weAreGermanViceChampion">We are German vicechampion</lang-element></h2>
+      <p>
+        <lang-element path="germanViceText">
+          At the German championship on the 16<sup>th</sup> and 17<sup>th</sup> of March 2025 at the Audi driving experience center we were able to qualify for the World Championship in Singapore.
+        </lang-element>
+      </p>
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/dmWon.jpg"
+        alt="Foto von uns mit dem 2. Platz">
+        
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/teamstandDM.jpg"
+        alt="Foto von unserem Teamstand bei der DM">
+
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/prices.jpeg"
+        alt="Foto von unseren Preisen">
+    </div>
+
+    <div id="prepForDM">
+      <h2>Vorbereitungen für die Deutsche Meisterschaft</h2>
+      <p>
+        Nach dem Sieg der Hamburger Meisterschaft ging es
+        am nächsten Tag direkt los mit den Vorbereitungen
+        für die Deutsche Meisterschaft. Beim Kickoff Meeting
+        haben wir leicht veränderte Zuständigkeiten festgelegt,
+        sowie Zeit- und Budgetplanung durchgeführt. Aktuell
+        arbeiten wir aktiv an einem Prototypen und der
+        Sponsorenakquise. Wir verbessern unser Laser-Messystem
+        und treffen die ersten Entscheidungen für unseren Teamstand.
+      </p>
+      <img loading="lazy" src="./src/imgs/news/discrodScreenshot.png" alt="Bildschirm mit Discord geöffnet">
+    </div>
+
+    <div id="teamWonHH">
+      <h2><lang-element path="weAreHamburgerChapion">We are Hamburger champion!</lang-element></h2>
+      <div class="textWrapper">
+        <p>
+          <lang-element path="weAreHamburgerChapionText">
+            At the Hamburger championship on the 22<sup>th</sup> of February 2025 we were able to win the first place and qualify for the German championship.
+            Our car was the fastest of them all with a time of 1.203 seconds. We also won 5 special prices:
+          </lang-element>
+        </p>
+        <ul id="extraPrices">
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_SchnellstesAuto.jpg" data-name="fastestCar"><lang-element path="fastestCar">fastest Car</lang-element></li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_PortfolioUnternehmen.jpg" data-name="bestPortfolioCompany"><lang-element path="bestPortfolioCompany">best portfolio enterprise</lang-element></li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_PortfolioTechnik.jpg" data-name="bestPortfolioTechnology"><lang-element path="bestPortfolioTechnology">bestes electronic portfolio</lang-element></li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_Konstruktionspreis.jpg" data-name="constructionPrice"><lang-element path="constructionPrice">construction price</lang-element></li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_muendlichePraesentation.jpg" data-name="bestPresentation"><lang-element path="bestPresentation">best presentation</lang-element></li>
+        </ul>
+      </div>
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/fotoTeamStand1.jpg"
+        alt="Foto von unserem Teamstand mit den Urkunden">
+      <img loading="lazy" imgRenn="" src="./src/imgs/news/fotorennbahn.jpg" alt="Foto von der Rennbahn">
+    </div>
+  </div>
+
+  <div id="aboutUs">
+    <h1><lang-element path="aboutUs">About Us</lang-element></h1>
+    <div class="personAboutUs" id="benjamin">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_benjamin.png" alt="Foto von Benjamin">
+      <h2>Benjamin Hillmann - Teammanager</h2>
+      <p>
+        Als Team- und Projektmanager bin ich verantwortlich für
+        die Aufgabenverwaltung, das Setzen und Einhalten von
+        Deadlines sowie die Akquise und Betreuung unserer Sponsoren.
+        Zudem leite ich die Kommunikation innerhalb des Teams.
+        Ich habe den ständigen Überblick über die einzelnen
+        Aufgaben und kann so andere Teammitglieder auf dem
+        aktuellen Stand halten. In meiner Freizeit spiele
+        ich gerne Tennis und Saxophon.
+      </p>
+    </div>
+    <div class="personAboutUs" id="florian">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_florian.png" alt="Foto von Florian">
+      <h2>Florian Storr - <lang-element path="designer">Designer</lang-element></h2>
+      <p>
+        Ich nehme im Team die Rolle des Konstrukteurs ein.
+        Somit bin ich Hauptverantwortlicher für die Entwicklung
+        unseres Autos mit Hilfe der CAD-Software Solid Edge
+        unter Beachtung des Regelwerks. Regelmäßig führe ich
+        virtuelle und reale Analysen von Prototypen und
+        Testfahrzeugen durch. Ein wichtiger Bestandteil
+        meiner Arbeit besteht auch darin, Recherchen und
+        Forschungen für die Konstruktion durchzuführen. In
+        meiner Freizeit rudere ich und engangiere mich bei
+        den Pfadfindern.
+      </p>
+    </div>
+    <div class="personAboutUs" id="kjell">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_kjell.png" alt="Foto von Kjell">
+      <h2>Kjell Ackermann - <lang-element path="graphicDesignAndRenderings">Graphicdesign & Renderings</lang-element></h2>
+      <p>
+        Ich kümmere mich um das Grafikdesign unseres Teams,
+        insbesondere der Portfolios. Außerdem erstelle ich
+        Renderings von dem Auto oder unser Car Reveal.
+        Außerhalb von STEM Racing fliege ich gerne
+        FPV-Drohne und bin bei der Jugendfeuerwehr engagiert.
+      </p>
+    </div>
+    <div class="personAboutUs" id="darius">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_darius.png" alt="Foto von Darius">
+      <h2>Darius Frobeen - <lang-element path="itAndTeamstand">IT & Team stand</lang-element></h2>
+      <p>
+        Mein Zuständigkeitsbereich ist die IT sowie der Teamstand
+        und die Elektronik. Ich habe unser Testsystem programmiert
+        und gelötet und werde unseren Teamstand auf der Deutschen
+        Meisterschaft konzipieren und anschließend bauen. In meiner
+        Freizeit fahre ich gerne Inliner.
+      </p>
+    </div>
+    <div class="personAboutUs" id="moritz">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_moritz.png" alt="Foto von Moritz">
+      <h2>Moritz Klinke - <lang-element path="presentation">Presentation</lang-element></h2>
+      <p>
+        Während der Vorbereitungen beschäftige ich mich mit
+        dem zweitwichtigsten Wettbewerbselement: Die Präsentation.
+        Meine Hobbies sind Klavierspielen und Dart.
+      </p>
+    </div>
+    <div class="personAboutUs" id="vincent">
+      <img loading="lazy" src="./src/imgs/aboutUs/resized_vincent.png" alt="Foto von Vincent">
+      <h2>Vincent Penner - Social Media</h2>
+      <p>
+        Ich bin dem Team Ascent nach der Hamburger Meisterschaft
+        beigetreten. Seit dem kümmere ich mich um unsere Social
+        Media Kanäle und designe mit der Adobe Creative Cloud alle Posts.
+        Zusätzlich helfe ich Darius beim Teamstand.
+      </p>
+    </div>
+  </div>
+
+  <div id="sponsoring">
+    <h1><lang-element path="sponsoringInformation">We are looking for sponsors - Information</lang-element></h1>
+
+    <div id="whySponsorings">
+      <h2><lang-element path="whyWeNeedSponsors">Why do we need sponsors?</lang-element></h2>
+
+      <p>
+        <lang-element path="whyWeNeedSponsorsText">
+          With the participation in the World Championship in Singapore come high costs like travel costs, participation costs and production costs. Below we have listed the costs in a transparent manner.
+        </lang-element>
+      </p>
+
+      <h3><lang-element path="plannedExpenses">Expenses for the World Championship 2025</lang-element></h3>
+
+      <img loading="lazy" id="graphImage" src="./src/imgs/sponsoring/GraphWithAxisAllOne.svg"
+        alt="Graph der geplanten Ausgaben">
+    </div>
+
+    <div id="returnment">
+      <h2><lang-element path="sponsoringServiceInReturn">Service in return</lang-element></h2>
+      <img loading="lazy" imgNewSponsorPost="" src="./src/imgs/sponsoring/gegen/imgNewSponsor.png"
+        alt="Neuer Sponsor Post Beispiel">
+      <img loading="lazy" imgCarLogos="" src="./src/imgs/sponsoring/gegen/imgCar.png" alt="Auto mit Sponsorlogo">
+
+      <ul>
+        <li><lang-element path="donationReceipt">donation receipt (for monetary donations)</lang-element></li>
+        <li><lang-element path="logoOnCar">your logo on our car (max 7 logos)</lang-element></li>
+        <li><lang-element path="logoOnTemClothes">logo on team clothing</lang-element></li>
+        <li><lang-element path="logoOnTeamStand">logo on team stand</lang-element></li>
+        <li><lang-element path="instapost">Instagram post with you</lang-element></li>
+        <li><lang-element path="logoOnWebsite">logo on this website</lang-element></li>
+        <li><lang-element path="logoInPortfolio">logo in portfolio</lang-element></li>
+      </ul>
+
+    </div>
+
+    <div id="sponsorsUntilNow">
+      <h2><lang-element path="currentSponsors">Current Sponsors</lang-element></h2>
+      <div class="swipeContainerWrapper">
+        <swiper-container 
+          loop="true" 
+          autoplay-delay="1500" 
+          autoplay="true" 
+          id="swiper"
+        >
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.stiftungbildung.org/', '_blank')"  src="./src/imgs/sponsoring/current/Stiftung Bildung SVG.svg" alt="Stiftung Bildung Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.scharlau.de/', '_blank')"  src="./src/imgs/sponsoring/current/scharlau.svg" alt="Scharlau Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" class="big" onclick="window.open('https:\/\/elbpaint.de/', '_blank')"  src="./src/imgs/sponsoring/current/Elbpaintlogo.png" alt="Elbpaint Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/myonic.com/', '_blank')"  src="./src/imgs/sponsoring/current/MyonicWeiß.svg" alt="Myonic Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.wilhelm-stemmer-stiftung.de/', '_blank')"  src="./src/imgs/sponsoring/current/WillhelmStemmerWeiß.svg" alt="Willhelm Stemmer Stiftung Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/greibke.com/', '_blank')"  src="./src/imgs/sponsoring/current/Logo_ClaudiaGreibkeWeiß.svg" alt="Claudia Greibke Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/3dconnexion.com/de/', '_blank')"  src="./src/imgs/sponsoring/current/3dConnexionWeiß.svg" alt="3d Connexion Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" class="big" onclick="window.open('https:\/\/hamburg.bestcarwash.de/', '_blank')" style="padding: 1em;" src="./src/imgs/sponsoring/current/Best_Car_Wash_Hamburg_Logo.png" alt="Stiftung Bildung Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.ansys.com/de-de', '_blank')"  src="./src/imgs/sponsoring/current/AnsysLogo.svg" alt="Ansys Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.igus.de/', '_blank')"  src="./src/imgs/sponsoring/current/Igus_logo.svg" alt="Igus logo Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.awork.com/', '_blank')"  src="./src/imgs/sponsoring/current/awork.svg" alt="Awork Logo">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/kayhof.de', '_blank')"  src="./src/imgs/sponsoring/current/Kayhof.svg" alt="Kay Hof">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/www.reifen-altmann.de', '_blank')"  src="./src/imgs/sponsoring/current/Altmann.svg" alt="Altmann">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/albrecht-q.de', '_blank')"  src="./src/imgs/sponsoring/current/Albrecht Q Logo.svg.svg" alt="">
+          </swiper-slide>
+          <swiper-slide>
+            <img loading="lazy" onclick="window.open('https:\/\/ib-marien.de', '_blank')"  src="./src/imgs/sponsoring/current/Ingenieurbüro Marien Logo.svg" alt="Ingenieurbüro Marien">
+          </swiper-slide>
+        </swiper-container>
+        <script>
+          window.addEventListener("resize", ()=>{
+            calc();
+          });
+
+          const calc = ()=>{
+            document.getElementById("swiper").slidesPerView = Math.floor(window.innerWidth / 350);
+          };
+          calc();
+        </script>
+      </div>
+
+      <!-- <div id="sponsorGrid">
+        <img loading="lazy" onclick="window.open('https:\/\/www.stiftungbildung.org/', '_blank')"
+          style="grid-area: 1 / 1 / 2 / 2;" src="./src/imgs/sponsoring/current/Stiftung Bildung SVG.svg"
+          alt="Stiftung Bildung Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/www.scharlau.de/', '_blank')"
+          style="grid-area: 1 / 2 / 2 / 3;" src="./src/imgs/sponsoring/current/scharlau.svg" alt="Scharlau Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/elbpaint.de/', '_blank')" style="grid-area: 1 / 3 / 2 / 4;"
+          src="./src/imgs/sponsoring/current/Elbpaintlogo.svg" alt="Elbpaint Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/myonic.com/', '_blank')" style="grid-area: 2 / 1 / 3 / 2;"
+          src="./src/imgs/sponsoring/current/MyonicWeiß.svg" alt="Myonic Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/www.wilhelm-stemmer-stiftung.de/', '_blank')"
+          style="grid-area: 2 / 2 / 3 / 3;" src="./src/imgs/sponsoring/current/WillhelmStemmerWeiß.svg"
+          alt="Willhelm Stemmer Stiftung Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/greibke.com/', '_blank')" style="grid-area: 2 / 3 / 3 / 4;"
+          src="./src/imgs/sponsoring/current/Logo_ClaudiaGreibkeWeiß.svg" alt="Claudia Greibke Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/3dconnexion.com/de/', '_blank')"
+          style="grid-area: 3 / 1 / 4 / 2;" src="./src/imgs/sponsoring/current/3dConnexionWeiß.svg"
+          alt="3d Connexion Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/hamburg.bestcarwash.de/', '_blank')"
+          style="grid-area: 3 / 2 / 4 / 3; padding: 2em;" src="./src/imgs/sponsoring/current/Best_Car_Wash_Hamburg_Logo.png"
+          alt="Stiftung Bildung Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/www.ansys.com/de-de', '_blank')"
+          style="grid-area: 3 / 3 / 4 / 4;" src="./src/imgs/sponsoring/current/AnsysLogo.svg" alt="Ansys Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/www.igus.de/', '_blank')" style="grid-area: 4 / 1 / 5 / 2;"
+          src="./src/imgs/sponsoring/current/Igus_logo.svg" alt="Igus logo Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/www.awork.com/', '_blank')"
+          style=" grid-area: 4 / 3 / 5 / 4;" src="./src/imgs/sponsoring/current/awork.svg" alt="Awork Logo">
+        <img loading="lazy" onclick="window.open('https:\/\/kayhof.de', '_blank')" style="grid-area: 4 / 2 / 5 / 3;"
+          src="./src/imgs/sponsoring/current/Kayhof.svg" alt="Kay Hof">
+        <img loading="lazy" onclick="window.open('https:\/\/www.reifen-altmann.de', '_blank')" style="grid-area: 5 / 1 / 6 / 2;"
+          src="./src/imgs/sponsoring/current/Altmann.svg" alt="Altmann">
+        <img loading="lazy" onclick="window.open('https:\/\/albrecht-q.de', '_blank')" style="grid-area: 5 / 2 / 6 / 3;"
+          src="./src/imgs/sponsoring/current/Albrecht Q Logo.svg.svg" alt="">
+        <img loading="lazy" onclick="window.open('https:\/\/ib-marien.de', '_blank')" style="grid-area: 5 / 3 / 6 / 4;"
+          src="./src/imgs/sponsoring/current/Ingenieurbüro Marien Logo.svg" alt="Ingenieurbüro Marien">
+      </div> -->
+    </div>
+
+    <div id="sponsorUs">
+      <h2><lang-element path="dontations">Donations</lang-element></h2>
+      <div id="gofundmeEmbedd">
+        <div class="gofundmetext">
+          <lang-element path="donationText">
+            When you want to donate you can do it via our GoFundMe. <br>
+            <span>We appreciate every donation</span>
+          </lang-element>
+        </div>
+
+        <div class="gofundme">
+          <img loading="lazy" src="./src/imgs/sponsoring/GroupPhoto.png" alt="Gruppen Foto">
+          <h3><lang-element path="donationsToAscent">Donation to the Team "Ascent" for the World Championship</lang-element></h3>
+          <p>1000€ <lang-element path="donationGoal">Donation goal</lang-element></p>
+          <div class="donateBtnDiv">
+            <div class="donateNow">
+              <button onclick="window.open('https:\/\/gofund.me/780e1447', '_blank')"><lang-element path="donateNow">Donate Now</lang-element></button>
+            </div>
+            <svg class="hrt-disp-block hrt-gfm-logo" onclick="window.open('https:\/\/gofundme.com', '_blank')"
+              alt="GoFundMe Logo" fill="none" height="36" viewBox="0 0 105 36" width="105"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path clip-rule="evenodd"
+                d="m4.8556 19.4183c1.28303 0 2.73375.5394 3.50113 1.6066h.09587v-1.3308h3.4771v10.9465c0 3.6329-2.99735 5.3594-5.97097 5.3594-2.88923 0-5.70701-1.6425-5.731072-4.7238h3.453002c.08403 1.3785 1.07907 2.0141 2.23031 2.0141 1.15088 0 2.32582-.7074 2.32582-2.458v-1.6783h-.09588c-.77922.935-2.08631 1.4385-3.28531 1.4385-2.91329 0-4.8556-2.7815-4.8556-5.623s1.94231-5.5512 4.8556-5.5512zm34.4819.264v6.1986c0 .9232.7193 1.6665 1.6184 1.6665.8992 0 1.6188-.7433 1.6188-1.6665v-6.1986h3.6925v6.1386c0 3.1413-2.1581 5.0596-5.3113 5.0596-3.0932 0-5.3113-1.8465-5.3113-5.0596v-6.1386zm59.8271-.288c3.2134 0 5.7674 2.398 5.7674 5.7551 0 .3128-.029.5774-.053.7494l-.007.0539h-7.7093c.1318 1.4026 1.0069 2.194 2.0741 2.194.5951 0 1.2012-.2401 1.7242-.8148l.074-.0843h3.561c-.923 2.4698-3.177 3.6206-5.4314 3.6206-2.8892 0-5.7669-1.906-5.7669-5.7188 0-3.3571 2.5538-5.7551 5.7669-5.7551zm-79.6456-.0959c3.3453 0 6.0787 2.3621 6.0787 5.767 0 3.4052-2.7334 5.7669-6.0787 5.7669-3.333 0-6.0305-2.338-6.0305-5.7669 0-3.429 2.6975-5.767 6.0305-5.767zm53.1373-6.2345v17.5286h-3.477v-1.4508h-.0959c-.9473 1.0673-2.2662 1.6666-3.597 1.6666-2.9973 0-4.9878-2.7334-4.9878-5.6948s1.9905-5.6833 4.9878-5.6833c1.1509 0 2.5298.4316 3.3812 1.4629h.0958v-7.8292zm-40.3325-.3117c.6833 0 1.3907.0837 2.0023.2277v2.9854c-.2758-.0718-.4916-.1081-.7315-.1081-.995 0-1.8583.408-1.8583 1.7265v2.1104h2.254v2.9855h-2.254v7.9129h-3.6929v-7.9129h-1.6065v-2.9855h1.6065v-2.8774c0-2.7219 1.9305-4.0645 4.2804-4.0645zm22.684 6.6421c2.0382 0 3.9324 1.4388 3.9324 4.2444v6.9538h-3.6925v-6.1864c0-1.0913-.7315-1.8224-1.6547-1.8224s-1.6547.7552-1.6547 1.8224v6.1864h-3.6925v-10.8984h3.4767v1.3667h.0959c.8273-1.1268 2.1462-1.6665 3.1894-1.6665zm33.019 0c1.9541 0 3.8128 1.4629 3.8128 4.2085v6.9897h-3.6929v-6.3182c0-1.0195-.6715-1.6906-1.5107-1.6906-.8514 0-1.5229.6833-1.5229 1.6906v6.3182h-3.6925v-6.3182c0-1.0195-.6715-1.6906-1.5107-1.6906-.8514 0-1.5229.6833-1.5229 1.6906v6.3182h-3.6929v-10.8984h3.4771v1.3667h.0959c.7315-1.1031 1.9664-1.6543 3.1413-1.6543 1.139 0 2.3262.5993 3.0454 1.8823h.0959c.9114-1.3071 2.2181-1.8945 3.4771-1.8945zm-21.4732 3.2731c-1.3548 0-2.458 1.1031-2.458 2.4579 0 1.3549 1.1032 2.4698 2.458 2.4698s2.4576-1.1149 2.4576-2.4698c0-1.3548-1.1028-2.4579-2.4576-2.4579zm-47.0105-.0837c-1.3308 0-2.4099 1.1028-2.4099 2.4817s1.0791 2.482 2.4099 2.482 2.4098-1.1031 2.4098-2.482-1.079-2.4817-2.4098-2.4817zm-13.59622.0837c-1.29488 0-2.34988 1.0431-2.34988 2.338s1.055 2.3499 2.34988 2.3499 2.33803-1.055 2.33803-2.3499-1.04315-2.338-2.33803-2.338zm93.24182-.5634c-.971 0-1.7983.6233-2.0741 1.8705h4.0884c-.228-1.2231-1.043-1.8705-2.0143-1.8705zm3.9303-6.085.681 2.0015.676-2.0015h.456v2.3673h-.307v-1.3974c0-.0482.002-.1281.004-.2399s.003-.2317.003-.3595l-.676 1.9968h-.318l-.682-1.9968v.0726c0 .0581.002.1462.005.265.003.1189.005.2059.005.2618v1.3974h-.307v-2.3673zm-.746 0v.2821h-.798v2.0852h-.324v-2.0852h-.798v-.2821zm-49.9072-5.6385c4.1515 0 7.7733 2.2566 9.7131 5.6085h-19.4258c1.9397-3.3519 5.5615-5.6085 9.7127-5.6085zm11.1571-5.37831c.7196-.71962 1.8968-.71962 2.616 0 .7197.71925.7197 1.89641 0 2.61604l-2.7881 2.78817c-.7193.7192-1.8964.7192-2.6161 0l-.0634-.0667c-.6551-.72385-.634-1.85189.0634-2.54934zm-24.8532-.06344c.7239-.65552 1.8519-.63438 2.5494.06344l2.7885 2.78817c.7193.71925.7193 1.89641 0 2.61604-.7196.7192-1.8968.7192-2.616 0l-2.7886-2.78817c-.7192-.71963-.7192-1.89679 0-2.61604zm13.6728-4.93875.0799.00171783c.9809.04222747 1.7699.85758817 1.7699 1.84842217v3.94275c0 1.01761-.8322 1.85014-1.8498 1.85014-1.0173 0-1.8498-.83253-1.8498-1.85014v-3.94275c0-1.017614.8325-1.85014 1.8498-1.85014z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="contact">
+    <h2><lang-element path="contactUsNow">Contact Us Now!</lang-element></h2>
+
+    <div class="mail" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="./src/imgs/contact/Email.png" alt="Email">
+      <a href="mailTo: team@ascent-racing.com">team@ascent-racing.com</a>
+    </div>
+
+    <div class="phone" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="./src/imgs/contact/telephone.png" alt="Telefon">
+      <a href="tel: +49 152 0653 2230">+49 152 0653 2230 - Benjamin Hillmann</a>
+    </div>
+
+    <div class="insta" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="./src/imgs/contact/insta.png" alt="Instagram">
+      <a href="https://instagram.com/ascent.racing/" target="_blank">Ascent.racing</a>
+    </div>
+
+    <div class="whatsapp" onclick="this.querySelector('a').click()">
+      <img src="./src/imgs/contact/WhatsApp.svg" alt="WhatsApp">
+      <a href="https://whatsapp.com/channel/0029Vb5epgZ0rGiTudaU8K2o" target="_blank">Ascent</a>
+    </div>
+
+    <div class="sendBtnAnimation" id="ownMessage">
+      <span class="default">
+        <input type="text" name="" id="name" placeholder="Your Name" placeholderPath="yourName">
+        <input type="email" name="" id="email" placeholder="Your E-mail adresse" placeholderPath="yourEmail">
+        <textarea name="" id="message" placeholder="Message" placeholderPath="yourMessage"></textarea>
+        <button id="sendMessage">
+          <lang-element path="sendMessage">Send</lang-element>
+        </button>
+      </span>
+      <span class="success">
+        <span class="mark">&#10003;</span><lang-element path="messageSent">Sent</lang-element>
+      </span>
+      <svg class="trails" viewBox="0 0 33 64">
+        <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
+        <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+      </svg>
+      <div class="plane">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="copyrightETC">
+    <div id="footers">
+      <div class="contactFormFooter">
+        <h3><lang-element path="contact">Contact</lang-element></h3>
+        <p class="mobile"><lang-element path="telephone">telephone</lang-element>:&nbsp;<a href="tel: +49 15206532230">+49 152 0653 2230<span class="mobileSecondPart"> -
+              Benjamin Hillmann</span></a></p>
+        <p class="email">Email: <a href="mailTo:team@ascent-racing.com">team@ascent-racing.com</a></p>
+        <p class="insta">Instagram: <a href="https://instagram.com/ascent.racing/" target="_blank">ascent.racing</a></p>
+        <p class="linkedIn">LinkedIn: <a href="https://www.linkedin.com/in/stem-racing-team-ascent-39187232b/">Stem
+            Racing Team Ascent</a></p>
+      </div>
+
+      <div class="footerMenu">
+        <h3><lang-element path="menu">Menu</lang-element></h3>
+        <a id="footerHome"><lang-element path="home">Home</lang-element></a>
+        <a id="footerCompetition"><lang-element path="competition">Competition</lang-element></a>
+        <a id="footerNews"><lang-element path="news">News</lang-element></a>
+        <a id="footerAboutUs"><lang-element path="aboutUs">About Us</lang-element></a>
+        <a id="footerSponsoring"><lang-element path="sponsoring">Sponsoring</lang-element></a>
+        <a id="footerContact"><lang-element path="contact">Contact</lang-element></a>
+      </div>
+
+      <div class="newsletterAbo">
+        <h3>Newsletter</h3>
+        <div class="emailInput">
+          <input type="email" name="" id="emailNewsletter" placeholder="Your E-mail adresse" placeholderPath="yourEmail">
+          <button id="newsletterBtn">
+            <span class="default"><lang-element path="subscribe">Subscribe</lang-element></span>
+            <span class="success">&#10003; <lang-element path="subscribed">Subscribed!</lang-element>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <br>
+
+    <div id="rights">
+      <a id="impressum"><lang-element path="imprint">Imprint</lang-element></a>
+      <a id="datenschutzrichtlinie"><lang-element path="privacyPolicy">Privacy Policy</lang-element></a>
+    </div>
+
+    <p class="copyright">
+      © 2024 -
+      <script>document.write(new Date().getFullYear())</script> <lang-element path="allRightsReserved">Ascent. All Rights Reserved.</lang-element> <br>
+    </p>
+  </div>
+
+  <div id="otherPages">
+    <iframe src="./policy/index.html" frameborder="0" id="policyFrame" class=""></iframe>
+    <iframe src="./impressum/index.html" frameborder="0" id="impressumFrame" class=""></iframe>
+  </div>
+
+  <div id="languageToggle" lang="en">
+    <div class="english">
+      <img loading="eager" src="./src/imgs/langToggle/english.png" alt="English" id="englishFlag">
+    </div>
+    <div class="german">
+      <img loading="eager" src="./src/imgs/langToggle/german.jpg" alt="German" id="germanFlag">
+    </div>
+  </div>
+
+</body>
+
+</html>

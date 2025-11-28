@@ -1,0 +1,97 @@
+[
+    {
+        "title": "VID_1",
+        "src": "./imgs/videos/VID_1.mp4",
+        "srct": "./imgs/videos/VID_1.mp4"
+    },
+    {
+        "title": "VID_10",
+        "src": "./imgs/videos/VID_10.mp4",
+        "srct": "./imgs/videos/VID_10.mp4"
+    },
+    {
+        "title": "VID_11",
+        "src": "./imgs/videos/VID_11.mp4",
+        "srct": "./imgs/videos/VID_11.mp4"
+    },
+    {
+        "title": "VID_12",
+        "src": "./imgs/videos/VID_12.mp4",
+        "srct": "./imgs/videos/VID_12.mp4"
+    },
+    {
+        "title": "VID_13",
+        "src": "./imgs/videos/VID_13.mp4",
+        "srct": "./imgs/videos/VID_13.mp4"
+    },
+    {
+        "title": "VID_14",
+        "src": "./imgs/videos/VID_14.mp4",
+        "srct": "./imgs/videos/VID_14.mp4"
+    },
+    {
+        "title": "VID_15",
+        "src": "./imgs/videos/VID_15.mp4",
+        "srct": "./imgs/videos/VID_15.mp4"
+    },
+    {
+        "title": "VID_16",
+        "src": "./imgs/videos/VID_16.mp4",
+        "srct": "./imgs/videos/VID_16.mp4"
+    },
+    {
+        "title": "VID_17",
+        "src": "./imgs/videos/VID_17.mp4",
+        "srct": "./imgs/videos/VID_17.mp4"
+    },
+    {
+        "title": "VID_18",
+        "src": "./imgs/videos/VID_18.mp4",
+        "srct": "./imgs/videos/VID_18.mp4"
+    },
+    {
+        "title": "VID_19",
+        "src": "./imgs/videos/VID_19.mp4",
+        "srct": "./imgs/videos/VID_19.mp4"
+    },
+    {
+        "title": "VID_2",
+        "src": "./imgs/videos/VID_2.mp4",
+        "srct": "./imgs/videos/VID_2.mp4"
+    },
+    {
+        "title": "VID_3",
+        "src": "./imgs/videos/VID_3.mp4",
+        "srct": "./imgs/videos/VID_3.mp4"
+    },
+    {
+        "title": "VID_4",
+        "src": "./imgs/videos/VID_4.mp4",
+        "srct": "./imgs/videos/VID_4.mp4"
+    },
+    {
+        "title": "VID_5",
+        "src": "./imgs/videos/VID_5.mp4",
+        "srct": "./imgs/videos/VID_5.mp4"
+    },
+    {
+        "title": "VID_6",
+        "src": "./imgs/videos/VID_6.mp4",
+        "srct": "./imgs/videos/VID_6.mp4"
+    },
+    {
+        "title": "VID_7",
+        "src": "./imgs/videos/VID_7.mp4",
+        "srct": "./imgs/videos/VID_7.mp4"
+    },
+    {
+        "title": "VID_8",
+        "src": "./imgs/videos/VID_8.mp4",
+        "srct": "./imgs/videos/VID_8.mp4"
+    },
+    {
+        "title": "VID_9",
+        "src": "./imgs/videos/VID_9.mp4",
+        "srct": "./imgs/videos/VID_9.mp4"
+    }
+]

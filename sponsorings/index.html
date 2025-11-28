@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="overflowWhenVisible">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Sponsorings - Team Ascent</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./scss/allStyles.css' vite-ignore>
+        <!-- <script src='main.js'></script> -->
+    </head>
+    <body>
+        <div class="headerDiv">
+            <img src="./imgs/Sponsorings.jpg" class="headerImage" alt="Sponsoring Page" loading="lazy" vite-ignore>
+        </div>
+
+        <h1 langPath="sponsoring.title">Sponsoring</h1>
+
+        <p class="text" langPath="sponsoring.text">
+            To successfully participate in the World Finals, we rely on strong
+            partners and sponsors. The costs for travel, accommodation
+            and, of course, the production of our cars, etc. are significant, and as a
+            student team, we are unable to cover them on our own. 
+            <br>
+            In exchange
+            we can offer you various benefits, like e.g. placing your logo on our cars.
+        </p>
+
+        <p class="text" langPath="sponsoring.textAboutBank">
+            If your company is interested in sponsoring us, please feel free to contact us to discuss the details
+            in person. As a private individual, you can also make a donation directly to the following account of
+            our school&#8217;s support association, using the payment reference “STEM Racing Team Ascent.” If you
+            require a donation receipt, please include your address in the payment reference as well.
+        </p>
+
+        <div id="bank">
+            <p class="text">
+                Verein der Freunde des Gymnasiums Grootmoor e.V.<br>
+                IBAN: <span>DE63 2005 0550 1066 2115 49</span><br>
+                BIC: HASPDEHHXXX<br>
+                <span class="teamColor">Verwendungszweck: STEM Racing Team “Ascent”</span>
+            </p>
+            <div>
+                <img src="./imgs/qrcodeBank.png" alt="Bank Qr Code" vite-ignore>
+            </div>
+        </div>
+
+        <!-- <p>
+            : <br>
+            : <br>
+            : <br>
+
+        </p> -->
+
+        <script>
+            function donwloadSponsoringDocument(e){
+                const a = document.createElement('a');
+                const lang = document.documentElement.lang;
+                if(lang === "de"){
+                    a.href = '/sponsorings/sponsoringDocuments/Sponsoring_Dokument_DE.pdf';
+                }else{
+                    a.href = '/sponsorings/sponsoringDocuments/Sponsoring_Document_EN.pdf';
+                }
+                a.download = 'Sponsoring_Document.pdf';
+                a.click();
+            }
+        </script>
+
+        {{{CONTACT_FORMULAR}}}
+
+        <h2 langPath="sponsoring.currentSponsorings">These firms already supported us:</h2>
+
+        <div class="world">
+            <h3 langPath="sponsoring.world">World Championship</h3>
+            {{{SPONSORING_ROW_WORLD}}}
+        </div>
+
+        <div class="german">
+            <h3 langPath="sponsoring.german">German Championship</h3>
+            {{{SPONSORING_ROW_GERMAN}}}
+        </div>
+ 
+        <div class="hamburger">
+            <h3 langPath="sponsoring.hamburger">Hamburger Championship</h3>
+            {{{SPONSORING_ROW_HAMBURG}}}
+        </div>
+
+        {{{SPONSORING_ROW_RESIZE_LISTENER_AND_SCRIPT}}}
+
+        {{{FOOTER}}}
+        
+    </body>
+</html>

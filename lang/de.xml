@@ -1,0 +1,473 @@
+<de>
+    <mainTitle>Das Team Ascent ist Deutscher Vizemeister</mainTitle>
+
+    <navigationTitles>
+        <home>Home</home>
+        <competition>Wettbewerb</competition>
+        <aboutUs>Über Uns</aboutUs>
+        <theCar>Das Auto</theCar>
+        <sponsoring>Sponsoring</sponsoring>
+        <news>Neuigkeiten</news>
+        <contact>Kontakt</contact>
+    </navigationTitles>
+
+    <otherTitles>
+        <timeUntilWorldchampionship>Zeit bis zur Siegerehrung:</timeUntilWorldchampionship>
+    </otherTitles>
+
+    <clickOutside>Außerhalb des Bildes klicken, um es zu schließen</clickOutside>
+
+    <carReveal>
+        <theArrow2>Der Arrow2</theArrow2>
+        <theArrow2Text>
+            Der Arrow2 war unser Auto für die Deutsche Meisterschaft. Mit einer Zeit von
+            1,153 Sekunden hat es die Zeilgerade überquert. Es wiegt nur 55,1 Gramm bei einer Länge von
+            23,9cm.
+        </theArrow2Text>
+    </carReveal>
+
+
+    <specialAwards>
+        <fastestCar>Schnellstes Auto</fastestCar>
+        <bestPortfolioCompany>Bestes Portfolio Unternehmen</bestPortfolioCompany>
+        <bestPortfolioTechnology>Bestes Portfolio Technik</bestPortfolioTechnology>
+        <constructionPrice>Konstruktionspreis</constructionPrice>
+        <bestPresentation>Beste mündliche Präsentation</bestPresentation>
+    </specialAwards>
+
+    <shortTexts>
+        <whatIsStemRacing><a href="https://www.stemracing.com" target="_blank">STEM Racing</a> ist der weltweit größte Technologiewettbewerb für Schülerinnen und Schüler. Im Mittelpunkt steht der Bau eines Miniatur-Formel-1-Autos.</whatIsStemRacing>
+        <aboutUs>Wir sind das STEM Racing Team Ascent aus Hamburg, Deutschland, und fahren zu den Weltmeisterschaften 2025 in Singapur.</aboutUs>
+        <theCar>Das ist unser Arrow2 - das Auto, mit dem wir uns den Titel des deutschen Vizemeisters sichern konnten. Es ist das Ergebnis kontinuierlicher Tests mittels CAE-Analysen, Windkanaltests und realer Testfahrten.</theCar>
+        <sponsoring>Wir suchen Sponsoren für die Weltmeisterschaften in Singapur.</sponsoring>
+        <gofundme>Unterstütze Team Ascent auf ihrem Weg zu den Weltmeisterschaften in Singapur und hilf ihnen, erfolgreich zu sein.</gofundme>
+    </shortTexts>
+
+    <contactFormular>
+        <contactUsNow>Kontaktieren Sie uns!</contactUsNow>
+        <sendMessage>Senden</sendMessage>
+        <messageSent>Gesendet</messageSent>
+        <telephone>
+            Telefon:&#160;<a
+                    href="tel: +49 15206532230">+49 152 0653 2230
+            <span class="mobileSecondPart"> - Benjamin Hillmann</span></a>
+        </telephone>
+        <yourName type="placeholder">Ihr Name</yourName>
+        <yourEmail type="placeholder">Ihre E-Mail Addressee</yourEmail>
+        <yourMessage type="placeholder">Nachicht</yourMessage>
+    </contactFormular>
+
+    <footer>
+        <menu>Menü</menu>
+        <contact>Kontakt</contact>
+        <newsletter>Newsletter</newsletter>
+        <subscribe>Abonnieren</subscribe>
+        <subscribed>Abonniert!</subscribed>
+        <yourEmail type="placeholder">Deine E-Mail Addresse</yourEmail>
+        <imprint>Impressum</imprint>
+        <privacyPolicy>Datenschutzrichtlinie</privacyPolicy>
+        <allRightsReserved>Ascent. Alle Rechte vorbehalten.</allRightsReserved>
+    </footer>
+
+    <countdown>
+        <days>Tage</days>
+        <hours>Stunden</hours>
+        <minutes>Minuten</minutes>
+        <seconds>Sekunden</seconds>
+    </countdown>
+
+    <readMoreTexts>
+        <readMore>Mehr lesen</readMore>
+        <getToKnowUs>Lerne uns kennen</getToKnowUs>
+        <learnMore>Mehr erfahren</learnMore>
+        <openGallery>Galerie öffnen</openGallery>
+    </readMoreTexts>
+
+    <newsArticles>
+        <titles>
+            <prepDM>Vorbereitungen für die Deutsche Meisterschaft</prepDM>
+            <weAreGermanViceChampion>Wir sind Deutscher Vizemeister</weAreGermanViceChampion>
+            <weAreHamburgerChapion>Wir sind Hamburger Meister!</weAreHamburgerChapion>
+            <colorChange>Ascent Rebranding</colorChange>
+        </titles>
+        <colorChangeText>
+            Ascent goes Magenta! Wir haben unsere visuelle Identität aktualisiert. Im Rahmen des Rebrandings haben wir 
+            die Geometrie unseres Logos leicht angepasst, um diesem ein klareres und moderneres Erscheinungsbild zu verleihen. 
+            Gleichzeitig haben wir unsere Haupt-Teamfarbe von Lila zu einem neuen Magenta-Ton geändert.
+            <br />
+            <br />
+            <strong>Diese Änderungen sind ausschließlich kosmetischer Natur - unsere Leidenschaft, Werte und Ziele bleiben unverändert.</strong>
+        </colorChangeText>
+        <germanViceText>
+            Am 17. Mai sind wir Deutscher Vizemeister geworden und haben uns somit für die 
+            World Finals 2025 in Singapur qualifiziert. Die Deutsche Meisterschaft war eine 
+            tolle Erfajrimg - wir haben viele nette und inspirierende Teams kennengelernt, 
+            und unser Auto erreichte eine Rennzeit von nur 1,153 Sekunden. Ein riesiges 
+            Dankeschön an all unsere Sponsoren, die das möglich gemacht haben! Besonders 
+            gefreut hat uns, dass wir einige von ihnen - die Wilhelm Stemmer Stiftung &amp; 
+            Ansys - persönlich auf dem Event treffen konnten. Jetzt freuen wir uns auf die 
+            Fortsetzung - Wir setzen unsere Reise gemeinsam mit Blue Wolves und Echo Racing 
+            nach Singapur zu den World Finals fort.
+        </germanViceText>
+        <weAreHamburgerChapionText>
+            Auf der Hamburger Meisterschaft am 22. Februar 2025 konnten
+            wir uns den ersten Platz sichern und haben uns somit
+            für die Deutsche Meisterschaft qualifiziert. Unser Auto
+            fuhr mit 1,203s auf der 20m langen Bahn die schnellste
+            Zeit. Neben dem 1. Platz und dem damit verbundenen
+            Landessieg Hamburgs haben wir 5 Sonderpreise gewonnen:
+        </weAreHamburgerChapionText>
+        <prepForDM>
+            Nach dem Sieg der Hamburger Meisterschaft ging es
+            am nächsten Tag direkt los mit den Vorbereitungen
+            für die Deutsche Meisterschaft. Beim Kickoff Meeting
+            haben wir leicht veränderte Zuständigkeiten festgelegt,
+            sowie Zeit- und Budgetplanung durchgeführt. Aktuell
+            arbeiten wir aktiv an einem Prototypen und der
+            Sponsorenakquise. Wir verbessern unser Laser-Messystem
+            und treffen die ersten Entscheidungen für unseren Teamstand.
+        </prepForDM>
+    </newsArticles>
+
+    <aboutUs>
+        <titles>
+            <teammanager>Teammanager</teammanager>
+            <designer>Konstrukteur</designer>
+            <graphicDesignAndRenderings>Grafikdesigner</graphicDesignAndRenderings>
+            <itAndTeamstand>IT &amp; Teamstand</itAndTeamstand>
+            <marketingManager>Marketingmanager</marketingManager>
+            <manufacturingEngineer>Fertigungsingenieur</manufacturingEngineer>
+        </titles>
+        <title>Über uns</title>
+        <text>
+            Wir sind Team Ascent aus Hamburg!<br />
+            Unser Team besteht aus sechs Schülerinnen und Schülern des <a href="https://www.grootmoor.de" target="_blank">Grootmoor Gymnasiums</a>, und gemeinsam verfolgen wir ein Ziel: Weltmeister zu werden. 
+            Wir haben unser Team „Ascent“ genannt, weil der Name unsere <color class="teamColor">Motivation, aufzusteigen</color> symbolisiert – den ständigen Antrieb, uns weiterzuentwickeln, höher zu streben und gemeinsam über unsere 
+            Grenzen hinauszuwachsen. Unser Rennwagen heißt „Arrow2“ und spiegelt unsere Einstellung wider: <color class="teamColor">Präzision, Geschwindigkeit und eine klare Richtung</color> – immer vorwärts. Unser Logo zeigt 
+            zwei nach oben zeigende Pfeilspitzen, die den Aufstieg symbolisieren. Gleichzeitig erkennt man im Logo auch das <color>„A“ von Ascent</color>. Wir haben unser markantes Lila, <color class="teamColor">#c53cf5</color>, gewählt, 
+            weil es uns wirklich hervorhebt und das Gefühl von Geschwindigkeit verkörpert.
+        </text>
+        <personIntroduction>
+            <benjamninText>
+                Als Team- und Projektmanager bin ich verantwortlich für
+                die Aufgabenverwaltung, das Setzen und Einhalten von
+                Deadlines sowie die Akquise und Betreuung unserer Sponsoren.
+                Zudem leite ich die Kommunikation innerhalb des Teams.
+                Ich habe den ständigen Überblick über die einzelnen
+                Aufgaben und kann so andere Teammitglieder auf dem
+                aktuellen Stand halten. In meiner Freizeit spiele
+                ich gerne Tennis und Saxophon.
+            </benjamninText>
+
+            <florianText>
+                Ich nehme im Team die Rolle des Konstrukteurs ein.
+                Somit bin ich Hauptverantwortlicher für die Entwicklung
+                unseres Autos mit Hilfe der CAD-Software Solid Edge
+                unter Beachtung des Regelwerks. Regelmäßig führe ich
+                virtuelle und reale Analysen von Prototypen und
+                Testfahrzeugen durch. Ein wichtiger Bestandteil
+                meiner Arbeit besteht auch darin, Recherchen und
+                Forschungen für die Konstruktion durchzuführen. In
+                meiner Freizeit rudere ich und engagiere mich bei
+                den Pfadfindern.
+            </florianText>
+
+            <kjellText>
+                Ich kümmere mich um das Grafikdesign unseres Teams,
+                insbesondere der Portfolios. Außerdem erstelle ich
+                Renderings von dem Auto oder unser Car Reveal.
+                Außerhalb von STEM Racing fliege ich gerne
+                FPV-Drohne und bin bei der Jugendfeuerwehr engagiert.
+            </kjellText>
+
+            <dariusText>
+                Mein Zuständigkeitsbereich ist die IT sowie der Teamstand
+                und die Elektronik. Ich habe unser Testsystem programmiert
+                und gelötet und werde unseren Teamstand auf der Weltmeisterschaft 
+                konzipieren und anschließend bauen. In meiner
+                Freizeit fahre ich gerne Inliner.
+            </dariusText>
+
+            <moritzText>
+                Während der Vorbereitungen beschäftige ich mich mit
+                dem zweitwichtigsten Wettbewerbselement: Die Präsentation.
+                Meine Hobbies sind Klavierspielen und Dart.
+            </moritzText>
+
+            <vincentText>
+                Ich bin dem Team Ascent nach der Hamburger Meisterschaft
+                beigetreten. Seitdem kümmere ich mich um unsere Social
+                Media Kanäle und designe mit der Adobe Creative Cloud alle Posts.
+                Zusätzlich helfe ich Darius beim Teamstand.
+            </vincentText>
+        </personIntroduction>
+    </aboutUs>
+
+    <imprint>
+        <titles>
+            <disclaimer>Disclaimer - rechtliche Hinweise</disclaimer>
+            <warning>§ 1 Warnhinweis zu Inhalten</warning>
+            <externalLinks>§ 2 Externe Links</externalLinks>
+            <copyright>§ 3 Urheber- und Leistungsschutzrechte</copyright>
+            <specialtermsOfUse>§ 4 Besondere Nutzungsbedingungen</specialtermsOfUse>
+        </titles>
+
+        <titleDoc>Impressum - Ascent</titleDoc>
+        <title>Impressum</title>
+        <responsible><strong>Verantwortlich für den Inhalt</strong> (<span class="clamps">gem. § 55 Abs. 2 RStV</span>) ist
+        das gesamte Team Ascent</responsible>
+        <text1>
+            Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt
+            erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität
+            der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten.
+            Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung
+            des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt
+            keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am
+            Rechtsbindungswillen des Anbieters.
+        </text1>
+        <text2>
+            Diese Website enthält Verknüpfungen zu Websites Dritter (<span class='clamps'>'externe Links'</span>).
+            Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen
+            Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße
+            bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss
+            auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von
+            externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte
+            zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise
+            auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe
+            Links unverzüglich gelöscht.
+        </text2>
+        <text3>
+            Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und
+            Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung
+            bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt
+            insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw.
+            Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und
+            Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe
+            einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von
+            Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.
+        </text3>
+        <iframe>Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.</iframe>
+        <text4>
+            Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen
+            abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im
+            jeweiligen Einzelfall die besonderen Nutzungsbedingungen.
+        </text4>
+        <source>Quelle</source>
+    </imprint>
+
+    <privacyPolicy>
+        <titles>
+            <informationCollection>1. Gesammelte Informationen</informationCollection>
+            <howUseInformation>2. Wie wir Ihre Informationen verwenden</howUseInformation>
+            <cookies>3. Cookies</cookies>
+            <thirdPartylinks>4. Links zu Drittanbietern und Sponsoren</thirdPartylinks>
+            <dataSecurity>5. Datensicherheit</dataSecurity>
+            <yourRights>6. Ihre Rechte</yourRights>
+            <changes>7. Änderungen dieser Datenschutzerklärung</changes>
+            <translationDisclaimer>8. Haftungsausschluss für Übersetzungen</translationDisclaimer>
+            <contactUs>9. Kontaktieren Sie uns</contactUs>
+        </titles>
+        <titleDoc>Datenschutzrichtlinie - Ascent</titleDoc>
+        <title>Datenschutzrichtlinie</title>
+        <welcome>Willkommen auf der Website von Ascent (<a href="//">https://ascent-racing.com</a>), einem Stem-Racing-Team (ehemals „Formel 1 in der Schule“).  
+            Wir respektieren Ihre Privatsphäre und verpflichten uns zum Schutz Ihrer persönlichen Daten.  
+            Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Informationen behandeln, wenn Sie unsere Website besuchen.
+        </welcome>
+        <text1>Wenn Sie unsere Website besuchen, können wir die folgenden Informationen sammeln:</text1>
+        <text11><strong>Personenbezogene Daten:</strong> Wenn Sie uns über unser Kontaktformular oder per E-Mail kontaktieren, können wir Ihren Namen, Ihre E-Mail-Adresse und alle weiteren von Ihnen angegebenen Details erfassen.</text11>
+        <text12><strong>Nicht-personenbezogene Daten:</strong> Dazu gehören technische Daten wie Ihre IP-Adresse, Browsertyp, weitere Geräteinformationen und Ihr Surfverhalten auf unserer Website.</text12>
+        <text2></text2>
+        <text21><strong>Zur Verbesserung unserer Website:</strong> Wir bemühen uns kontinuierlich, unsere Website anhand der von Ihnen erhaltenen Informationen und Rückmeldungen zu verbessern.</text21>
+        <text22><strong>Zur Beantwortung von Anfragen:</strong> Wenn Sie uns kontaktieren, verwenden wir Ihre personenbezogenen Daten, um Ihre Anfrage zu beantworten.</text22>
+        <text23><strong>Zur Verwaltung von Sponsoren und Partnerschaften:</strong> Wir können relevante Informationen im Rahmen unserer Partnerschaftsvereinbarungen mit unseren Sponsoren teilen, jedoch werden wir Ihre persönlichen Daten niemals ohne Ihre Zustimmung weitergeben.</text23>
+        <text3></text3>
+        <text31><strong>Essenzielle Cookies:</strong> Diese Cookies sind für die Funktion der Website notwendig und können in unseren Systemen nicht deaktiviert werden.</text31>
+        <text32><strong>Performance-Cookies:</strong> Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem sie Informationen anonym sammeln und berichten.</text32>
+        <text33><strong>Targeting-Cookies:</strong> Wir können diese Cookies verwenden, um die Website für Sie relevanter zu gestalten und Ihnen relevante Sponsoring-Angebote und Werbung unserer Partner anzuzeigen.</text33>
+        <text34>Arten von Cookies, die wir verwenden:</text34>
+        <byUsingOurSite>Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu. Sie können Ihre Cookie-Einstellungen über das auf unserer Website erscheinende Cookie-Banner verwalten. Außerdem können Sie Cookies über die Einstellungen Ihres Browsers steuern oder löschen.</byUsingOurSite>
+        <text4>
+            Unsere Website kann Links zu Websites von Drittanbietern enthalten, einschließlich der Websites unserer Sponsoren.  
+            Bitte beachten Sie, dass wir nicht für die Datenschutzpraktiken dieser externen Seiten verantwortlich sind.  
+            Wir empfehlen Ihnen, die Datenschutzerklärungen der von Ihnen besuchten Drittanbieter-Websites zu lesen.
+        </text4>
+        <text5>
+            Wir setzen verschiedene Sicherheitsmaßnahmen ein, um die Sicherheit Ihrer persönlichen Daten zu gewährleisten.  
+            Jedoch ist keine Methode der Übertragung über das Internet oder der elektronischen Speicherung zu 100 % sicher, daher können wir keine absolute Sicherheit garantieren.
+        </text5>
+        <youHaveRights>Sie haben das Recht zu:</youHaveRights>
+        <text61>Auf Ihre bei uns gespeicherten personenbezogenen Daten zuzugreifen, diese zu berichtigen oder zu löschen.</text61>
+        <text62>Der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen.</text62>
+        <text63>Ihre Einwilligung jederzeit zu widerrufen.</text63>
+        <contactUsAt>Wenn Sie eines dieser Rechte ausüben möchten, kontaktieren Sie uns bitte unter <a href="mailto:team@ascent-racing.com">team@ascent-racing.com</a> oder über unser Kontaktformular unter <a href="//contact">https://ascent-racing.com/contact</a>.</contactUsAt>
+        <textChanges>
+            Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren.  
+            Alle Änderungen werden auf dieser Seite veröffentlicht, und das Datum der letzten Überarbeitung wird oben in der Erklärung angegeben.
+        </textChanges>
+        <translation>
+            Diese Datenschutzerklärung kann der besseren Verständlichkeit halber in andere Sprachen übersetzt werden.  
+            Im Falle von Abweichungen zwischen den Übersetzungen gilt jedoch die ursprüngliche englische Version.  
+            Bei Fragen oder Unklarheiten zu einem Aspekt dieser Erklärung kontaktieren Sie uns bitte unter <a href="mailto:team@ascent-racing.com">team@ascent-racing.com</a>.
+        </translation>
+        <questions>Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:</questions>
+        <using><strong>Durch die Nutzung dieser Website:</strong> erkennen Sie an, dass Sie diese Datenschutzerklärung gelesen und verstanden haben.</using>
+        <effective>Diese Richtlinie gilt ab dem <u><b>08.09.2024</b></u>.</effective>
+    </privacyPolicy>
+
+    <sponsoring>
+        <title>Sponsoring</title>
+        <text>
+            Um erfolgreich an den World Finals teilzunehmen, sind wir auf starke Partner und Sponsoren angewiesen. 
+            Die Kosten für Reise, Unterkunft und natürlich die Produktion unserer Autos usw. sind hoch und als Schülerteam 
+            können wir diese nicht allein tragen.
+            Im Gegenzug können wir Ihnen verschiedene Vorteile bieten, wie z. B. die Platzierung Ihres Logos auf unseren 
+            Autos. Weitere detaillierte Informationen finden Sie in unserem Sponsoring-Dokument.
+        </text>
+        <currentSponsorings>
+            Diese Firmen haben uns bereits unterstützt:
+        </currentSponsorings>
+        <world>Weltmeisterschaft</world>
+        <german>Deutsche Meisterschaft</german>
+        <hamburger>Hamburger Meisterschaft</hamburger>
+        <textAboutBank>
+            Wenn Sie Interesse an einem Sponsoring als Firma haben, kontaktieren Sie uns gern, 
+            um Details persönlich zu besprechen. Als Privatperson können Sie eine Spende auch 
+            direkt auf das folgende Konto des Fördervereins unserer Schule mit dem 
+            Verwendungszweck: „STEM Racing Team Ascent“ überweisen. Falls Sie eine 
+            Spendenbescheinigung von uns benötigen, geben Sie Ihre Adresse bitte zusätzlich 
+            im Verwendungszweck an.
+        </textAboutBank>
+    </sponsoring>
+
+    <theCar>
+        <titleDoc>Das Auto</titleDoc>
+        <title>Das Auto</title>
+        <titles>
+            <forwardThrust>Vorwärtsschub durch die CO2-Kartusche</forwardThrust>
+            <airResistance>Luftwiderstand</airResistance>
+            <frictionOfWheels>Reibung der rotierenden Räder</frictionOfWheels>
+
+            <earodynamics>Aerodynamische Verbesserungen (CFD-Analyse)</earodynamics>
+            <redirectionAirflow>Umlenkung des Luftstroms hinter den Vorderrädern</redirectionAirflow>
+            <concaveSidePod>Konkaver Seitenkasten</concaveSidePod>
+            <largelyConvexSidePod>Weitgehend konvexer Seitenkasten</largelyConvexSidePod>
+            <lcspwasf>Weitgehend konvexer Seitenkasten mit zusätzlichem Seitenflügel</lcspwasf>
+
+
+            <weightReduction>Gewichtsreduktion</weightReduction>
+            <stabilityComponents>Stabilität der Komponenten (FEA)</stabilityComponents>
+        </titles>
+        <introText>
+            Um das Design unseres Autos richtig zu verstehen, müssen wir zunächst klären, welche Kräfte auf das Auto wirken.
+        </introText>
+
+        <forwardThrustText>
+            In der Kartusche sind 8 Gramm CO2-Gas gespeichert. Da der Platz in der Kammer begrenzt ist, ist das Gas komprimiert und der Druck hoch. Wenn die Kartusche durchstochen wird, entweicht das Gas am hinteren Ende des Behälters. Mit Newtons drittem Gesetz (actio = reactio) lässt sich erklären, dass die Bewegung des Gases in eine Richtung eine Bewegung des Autos in die entgegengesetzte Richtung bewirkt.
+        </forwardThrustText>
+
+        <airResistanceText>
+            Enzo Ferrari sagte mal, “Aerodynamics are for people who can &#8217;t build engines.”
+            Aufgrund der von STEM Racing eingeführten technischen Vorschriften können wir die Beschleunigungskraft nicht verändern. Daher gilt das Zitat von Enzo Ferrari nicht für STEM Racing und wir konzentrieren uns darauf, den Luftwiderstand zu minimieren und Komponenten zu optimieren, um eine schnelle Streckenzeit zu erreichen, ohne die Beschleunigungskraft zu verändern.
+            Um den Luftwiderstandsbeiwert zu minimieren, welches ein Wert ist, der angibt, wie stromlinienförmig ein Objekt ist, verwenden wir verschiedene CFD-Analyseverfahren. CFD steht für Computational Fluid Dynamics, und eine der verwendeten Techniken ist die kombinierte Strömungsvisualisierung. Sie kombiniert die klassische Stromlinienvisualisierung mit dem Vektorkonturdiagramm. Der Vorteil dieser Technik liegt darin, dass sie beide Konzepte vereint und so ein besseres Verständnis über die Bewegungsrichtung und -geschwindigkeit der Luft liefert. Mit diesem Wissen können wir die Form der Fahrzeugkomponenten so optimieren, dass sie stromlinienförmiger werden (= geringerer Luftwiderstandsbeiwert). Eine weitere von uns verwendete Methode ist die Drag-Analyse. Mit dieser Art der CFD-Analyse kann der Luftwiderstandsbeiwert berechnet werden. Darüber hinaus gibt es viele weitere wichtige CFD-Analyseverfahren, auf die wir hier nicht eingehen werden.
+        </airResistanceText>
+
+        <frictionOfWheelsText>
+            Eine weitere Kraft, die das Fahrzeug abbremst, ist die Reibung zwischen den sich drehenden Rädern und dem starren Teil der Achskonstruktion. Um die Reibung zwischen diesen Komponenten zu minimieren, verwenden wir Kugellager. Das Testen verschiedener Kugellager und Achskonstruktionen ist ein entscheidender Teil der praktischen Erprobung, da sich die axialen Kräfte auf die Kugellager sowie deren Abnutzung bei verschiedenen Modellen und Herstellern nur schwer simulieren lassen.
+        </frictionOfWheelsText>
+
+        <introTextDesignProcess>
+            Um unseren Designprozess besser zu verstehen, haben wir ihn in drei Aspekte unterteilt:
+        </introTextDesignProcess>
+
+        <earodynamicsText>
+            Aerodynamische Forschung und Entwicklung (CFD-Analyse)  
+            In diesem Abschnitt zeigen wir euch unseren Designprozess am Beispiel unserer Seitenkasten.  
+            Um das Design unserer Seitenkästen zu verstehen, müssen wir zunächst ihre Funktion klären.
+        </earodynamicsText>
+
+        <redirectionAirflowText>
+            Das Hauptziel des Seitenkastens ist es, den Luftstrom hinter dem offenen Raum der Vorderräder von den Hinterrädern wegzuleiten. Zusätzlich sollen die Seitenkästen verhindern, dass die unvermeidbare turbulente Luft im Nachlauf der Vorderräder die weiter hinten liegenden laminaren Strömungsbereiche stört.
+        </redirectionAirflowText>
+
+        <outwardFlowingSidePodText>
+            Das einfachste Sidepod-Konzept leitet den turbulenten Luftstrom hinter den Vorderrädern nach außen. Diese Anordnung ermöglicht die Entstehung eines sauberen Tunnels in der Mitte des Fahrzeugs, in dem keine Turbulenzen auftreten. Die kombinierte Strömungsvisualisierung zeigt jedoch, dass der turbulente Nachlauf der Räder zwar durch den Sidepod nach außen abgeleitet wird, aber dennoch angrenzende Bereiche beeinflusst.
+        </outwardFlowingSidePodText>
+
+        <concaveSidePod>
+            Unsere erste Idee war es, die Rampe
+            auf ihre maximale Breite zu erweitern,
+            während das konkave Profil beibehalten wurde.
+        </concaveSidePod>
+
+        <largelyConvexSidePod>
+            In der folgenden Version wurde die Rampe
+            von einer konkaven in eine weitgehend
+            konvexe Form umgestaltet, was zu einer
+            Reduzierung des Luftwiderstands führte.
+        </largelyConvexSidePod>
+
+        <lcspwasf>
+            Darauf aufbauend wurde in einer dritten
+            Konfiguration ein Seitenflügel hinzugefügt,
+            um den Luftstrom effektiver um das Hinterrad
+            zu leiten. Dies führte jedoch zu einem leicht
+            höheren Luftwiderstand aufgrund von
+            Wechselwirkungen zwischen dem Seitenflügel
+            und dem Seitenkasten.
+        </lcspwasf>
+
+
+        <weightReductionText>
+            Da nur eine feste Menge an Kraft von der CO2-Kartusche abgegeben wird, ist es wichtig, das Fahrzeug so leicht wie möglich zu gestalten, wobei das Mindestgewicht von 55 Gramm eingehalten werden muss. Newtons zweites Gesetz (F = ma) besagt, dass ein Objekt umso schneller beschleunigt, je weniger es wiegt – bei gleichbleibender Kraft.
+            Um das Mindestgewicht zu erreichen, machen wir unsere Fahrzeuge innen hohl. Da die Gestaltungsfreiheit sehr hoch ist, verwenden wir SLS-Druck für die Herstellung unseres Chassis. Dies ist einfacher als das Fräsen aus Polyurethan (spezieller Hartschaumblock), da weniger Parameter berücksichtigt werden müssen.
+        </weightReductionText>
+
+        <stabilityComponentsText>
+            Um sicherzustellen, dass Räder, Halo und andere Komponenten dauerhaft stabil genug sind, um dem Aufpralldruck standzuhalten, testen wir sie virtuell mit der FEA.
+            Die Finite-Elemente-Analyse ist eine Simulation, die vorhersagt, wie Strukturen auf Kräfte wie Spannung, Hitze und Vibration reagieren. Komplexe Modelle werden in kleinere Elemente unterteilt, die auf das Auto wirkenden Kräfte definiert und Gleichungen unter Berücksichtigung der strukturellen Integrität der Materialien gelöst. Nach Abschluss der Simulation wird angezeigt, ob das Material stark genug ist, einer bestimmten Kraft standzuhalten.
+        </stabilityComponentsText>
+    </theCar>
+
+
+    <whatIsStemracing>
+        <titleDoc>Was ist STEM Racing</titleDoc>
+        <title>Was ist STEM Racing?</title>
+        <text>
+            STEM Racing, ehemals F1 in Schools, ist der weltweit größte MINT-Wettbewerb für Schüler. 
+            Die Teilnehmer treten in verschiedenen Kategorien an, darunter:
+        </text>
+        <text1>CAD-Design und Produktion eines Miniatur-Formel-1-Autos, das von CO2-Kartuschen angetrieben wird</text1>
+        <text2>Erstellung von drei detaillierten Portfolios (Projektmanagement, Marketing &amp; Digital Media und Design &amp; Engineering)</text2>
+        <text3>Erstellung eines Pit-Displays</text3>
+        <text4>Halten einer 10-minütigen Präsentation</text4>
+        <text5>
+            Jedes Projektelement wird von der Jury mit Punkten bewertet. Das Auto wird basierend auf Rennzeiten und 
+            Ergebnissen des technischen Scruitineerings bewertet. Der Sieger wird durch die Gesamtpunktzahl ermittelt. 
+            Es gibt mehrere Wettbewerbsebenen: Regional, National und die World Finals. Der Sieger qualifiziert sich jeweils für die nächste Stufe.
+        </text5>
+    </whatIsStemracing>
+
+    <gofundme>
+        <whyWeNeedYourHelp>
+            <span class="teamColor agrandir">Warum wir Ihre Unterstützung benötigen:</span>
+            <br />
+            Die Teilnahme an der Weltmeisterschaft bringt hohe Kosten mit sich:
+        </whyWeNeedYourHelp>
+        <registrationFees>Ca. 10.600 € für die Anmeldegebühren</registrationFees>
+        <travelCosts>Etwa 19.000 € für die Unterkunft im offiziellen Wettbewerbshotel</travelCosts>
+        <whyWeNeedYourHelpPart2>
+            Unser insgesamt kalkuliertes Budget liegt bei rund 50.000 €.
+            Wir sind ein Team von sechs Zehntklässlern und können diese Summe nicht allein aufbringen. Deshalb suchen wir dringend nach Sponsoren und Unterstützern - und genau hier kommen Sie ins Spiel.
+            Wir müssen unsere Zimmer im offiziellen Hotel innerhalb der nächsten drei Wochen buchen. Wenn wir bis dahin nicht genügend Mittel zusammenbekommen, können wir leider nicht an den Weltmeisterschaften teilnehmen.
+            Jede Unterstützung bringt uns unserem Traum ein Stück näher, Deutschland bei den Aramco STEM Racing World Finals 2025 in Singapur zu vertreten. 
+        </whyWeNeedYourHelpPart2>
+        <openGoFundMe>GoFundMe Öffnen</openGoFundMe>
+        <donateNow>Jetzt Spenden!</donateNow>
+    </gofundme>
+
+    <gallery>
+        <titleDoc>Gallery - Team Ascent</titleDoc>
+        <title>Gallery</title>
+    </gallery>
+
+</de>

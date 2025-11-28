@@ -1,0 +1,586 @@
+html, body, dialog {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-color: #212121;
+  color: #000000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+}
+
+html.overflowWhenVisible:not(.visible) {
+  overflow: hidden;
+}
+
+html:has(iframe.open),
+html:has(iframe.opened) {
+  overflow: hidden;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.centerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:not(.slow-transition) * {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+:not(.slow-transition) * ::after, :not(.slow-transition) * ::before {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.slow-transition * {
+  transition: all 5s !important;
+  box-sizing: border-box;
+}
+.slow-transition * ::after, .slow-transition * ::before {
+  transition: all 5s !important;
+  box-sizing: border-box;
+}
+
+iframe {
+  border: none !important;
+  outline: none !important;
+}
+
+.widthAvailable {
+  width: 100%;
+  width: fill-available;
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
+
+.h-s {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: content-box;
+}
+
+.title, h1, #thrusts details summary, #designProcess details summary {
+  line-height: 2.5rem;
+  font-family: "Agrandir Bold";
+  font-weight: 600;
+  color: #EEEEEE;
+}
+
+.text {
+  line-height: 2em;
+  font-family: "Poppins";
+  color: #EEEEEE;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, li {
+  text-wrap: wrap;
+  word-break: break-word;
+  word-wrap: anywhere;
+}
+
+body {
+  --mobile: 0;
+}
+
+@media (width < 1200px) {
+  body {
+    --mobile: 1;
+  }
+}
+*::-moz-selection {
+  background: #EC008C;
+  color: white;
+}
+*::selection {
+  background: #EC008C;
+  color: white;
+}
+
+.defaultElementOnMainPage {
+  color: #EEEEEE;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.6em, 0.7111111111em + 0.8888888889vw, 1.6em);
+  line-height: clamp(1.4em, 1.4222222222em + 0.1777777778vw, 1.6em);
+}
+
+.defaultMainElement {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  align-self: center;
+}
+
+@media (width < 200px) {
+  * {
+    word-wrap: anywhere;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+  }
+}
+.imageFade10 {
+  position: relative;
+}
+.imageFade10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade10::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 10%;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.imageFade15 {
+  position: relative;
+}
+.imageFade15::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade15::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.imageFade20 {
+  position: relative;
+}
+.imageFade20::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade20::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.imageFade25 {
+  position: relative;
+}
+.imageFade25::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade25::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.imageFade30 {
+  position: relative;
+}
+.imageFade30::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade30::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.imageFade35 {
+  position: relative;
+}
+.imageFade35::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #212121, rgba(33, 33, 33, 0));
+}
+.imageFade35::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+html, body {
+  background: #212121;
+}
+
+@font-face {
+  font-family: "Agrandir Bold";
+  src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+body {
+  display: grid;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center #introText, .center #introText2 {
+  width: 80%;
+}
+
+#introText2 {
+  margin-top: 3em;
+}
+
+#introText, #introText2 {
+  font-family: "Poppins";
+  color: #EEEEEE;
+  font-size: clamp(0.6em, 0.7em + 0.8vw, 1.5em);
+  line-height: 1.6em;
+  text-align: justify;
+  align-self: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+p[langpath="theCar.introTextDesignProcess"] {
+  margin-top: 2em;
+}
+
+h1 {
+  font-family: "Agrandir Bold";
+  font-size: clamp(1.3em, 1.4888888889em + 1.5111111111vw, 3em);
+  line-height: clamp(1.9em, 1.9111111111em + 0.0888888889vw, 2em);
+  color: #EC008C;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headerDiv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.headerImage {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.headerImage {
+  position: absolute;
+  width: 100vw !important;
+}
+
+.headerDiv video, .headerDiv img {
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 100%;
+}
+
+.headerDiv::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0), #212121);
+}
+
+.analysis img {
+  max-width: 100%;
+  max-height: 100%;
+  justify-self: center;
+}
+
+.analysis h2 {
+  font-family: "Agrandir Bold";
+  font-size: 2rem;
+  color: #EC008C;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.analysis {
+  margin-top: 5em;
+  width: 80%;
+  justify-self: center;
+}
+
+.analysis p {
+  color: #EEEEEE;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+.analysis.imageLeft,
+.analysis.imageRight {
+  display: grid;
+  grid-template-columns: auto 40vw;
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.analysis.imageLeft p {
+  grid-area: 2/2/3/3;
+  text-align: justify;
+  align-self: center;
+}
+
+.analysis.imageLeft img {
+  grid-area: 2/1/3/2;
+}
+
+.analysis.imageLeft h2 {
+  grid-area: 1/1/2/3;
+}
+
+.analysis.imageRight p {
+  grid-area: 2/1/3/2;
+  text-align: justify;
+  align-self: center;
+}
+
+.analysis.imageRight img {
+  grid-area: 2/2/3/3;
+}
+
+.analysis.imageRight h2 {
+  grid-area: 1/1/2/3;
+}
+
+.analysis.imageCenter {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto 30vh auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.analysis.imageCenter h2 {
+  grid-area: 1/1/2/3;
+}
+
+.analysis.imageCenter img {
+  grid-area: 2/1/3/3;
+}
+
+.analysis.imageCenter p {
+  grid-area: 3/1/4/3;
+  text-align: justify;
+  justify-self: center;
+  align-self: center;
+}
+
+#thrusts img {
+  max-width: 100%;
+  margin-block: 5em;
+  margin-bottom: 2em;
+}
+
+#designProcess img {
+  margin: 3em auto;
+  display: flex;
+  max-width: 100%;
+  max-height: 40vh;
+}
+
+#thrusts, #designProcess {
+  max-width: 80vw;
+  margin: 0 auto;
+  width: 80vw;
+}
+#thrusts details details, #designProcess details details {
+  background-color: rgb(83, 0, 49.2372881356);
+}
+#thrusts details, #designProcess details {
+  background: rgb(134, 0, 79.4915254237);
+  padding: 20px;
+  border-radius: 20px;
+  margin-block: 1em;
+}
+#thrusts details summary, #designProcess details summary {
+  font-family: "Agrandir Bold";
+  font-size: clamp(0.9em, 0.9777777778em + 0.6222222222vw, 1.6em);
+  color: #EC008C;
+  text-align: start;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+#thrusts details summary::before,
+#thrusts details summary::after, #designProcess details summary::before,
+#designProcess details summary::after {
+  content: "";
+  transition: 200ms;
+}
+#thrusts details summary::before,
+#thrusts details summary::after, #designProcess details summary::before,
+#designProcess details summary::after {
+  width: 0.75em;
+  height: 0;
+  border-bottom: 2px solid;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  transform: translateY(-50%);
+}
+#thrusts details summary::after, #designProcess details summary::after {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+#thrusts details details[open] summary::after, #designProcess details details[open] summary::after {
+  transform: rotate(0deg);
+}
+#thrusts details[open] > summary::after, #designProcess details[open] > summary::after {
+  transform: rotate(0deg);
+}
+#thrusts details p, #designProcess details p {
+  font-family: "Poppins";
+  color: #EEEEEE;
+  width: 80%;
+  font-size: clamp(0.6em, 0.6777777778em + 0.6222222222vw, 1.3em);
+  line-height: 1.6em;
+  text-align: justify;
+  align-self: center;
+  margin: 0 auto;
+}
+
+#designProcess details:last-of-type {
+  margin-bottom: 3em;
+}
+
+details div,
+details p,
+details details,
+details details summary {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+details[open] div,
+details[open] p,
+details[open] details,
+details[open] details summary {
+  transition: max-height 1s ease-in-out;
+  max-height: 10000px;
+}
+
+@media (width < 480px) {
+  .headerDiv, .headerImage {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 16/7;
+  }
+}
+@media (width < 800px) {
+  .visible .headerDiv, .visible .headerImage {
+    aspect-ratio: 16/9 !important;
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=allStyles.css.map */

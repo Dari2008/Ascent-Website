@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <link rel="preload" href="./src/fonts/AgrandirBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="./src/fonts/AgrandirRegular.otf" as="font" type="application/x-font-opentype">
+  <link rel="preload" href="./src/imgs/showImageFullScreen/Car.svg" as="font" type="image/svg+xml">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/icons/favicon-16x16.png">
+  <link rel="manifest" href="./src/icons/site.webmanifest">
+  <link rel="shortcut icon" href="./src/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./src/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title class="title">Team Ascent</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./src/scss/allStyles.css'>
+  <script type="module" src='./src/ts/index.ts' defer></script>
+  <script type="module" src='./src/ts/languageElement.ts'></script>
+
+  <!-- Search engine -->
+  <meta name="title" content="Ascent - F1 in schools" />
+  <meta name="description"
+    content="Wir sind das Team Ascent, eine Gruppe von fünf leidenschaftlichen Schülern, die am internationalen Wettbewerb Stem-Racing (ehemalig F1 in Schools) teilnehmen." />
+  <meta name="keywords"
+    content="Ascent Racing, Racing, Team, Racing Team, Racing Team Ascent, Ascent, Racing, Stem Racing, Stem, Miniatur, Auto, Minatur Auto" />
+  <meta name="author" content="Ascent" />
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="3 days" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KP68B24P');
+  </script>
+
+</head>
+
+<body onload="//document.getElementById('mainLoadingScreen').classList.add('hide');">
+
+
+  <div id="countdown">
+    <script>
+      window.addEventListener("load", () => {
+        if (sessionStorage.getItem('countdown') == null) {
+          sessionStorage.setItem('countdown', "true");
+        }
+
+        if (sessionStorage.getItem('countdown') == "true") {
+          const countdown = document.getElementById('countdown');
+          countdown.classList.add('visible');
+
+          countdown.addEventListener("transitionend", function (e) {
+            if (countdown.classList.contains('visible')) {
+              return;
+            }
+            countdown.classList.add('hidden');
+
+          });
+
+          document.getElementById("closeBtnCountdown").addEventListener("click", function () {
+            countdown.classList.remove('visible');
+            countdown.classList.remove('hidden');
+            sessionStorage.setItem('countdown', "false");
+          });
+
+        }
+      });
+    </script>
+    <p langPath="otherTitles.timeUntilWorldchampionship">Time Until World Championship:</p>
+    <embed src="./src/imgs/countdown/Countdown.svg" alt="Countdown" id="countdownEmbed">
+    <button class="close" id="closeBtnCountdown">
+      <span class="plus">+</span>
+    </button>
+  </div>
+
+  <nav id="navBar">
+    <img id="logo" src="./src/imgs/LogoQuer.svg" alt="Ascent Logo" async>
+    <div id="navButtons">
+      <a class="navButton" id="homeBtn" langPath="navigationTitles.home">Home</a>
+      <a class="navButton" id="competitionBtn" langPath="navigationTitles.competition">Competition</a>
+      <a class="navButton" id="newsBtn" langPath="navigationTitles.news">News</a>
+      <a class="navButton" id="aboutUsBtn" langPath="navigationTitles.aboutUs">About Us</a>
+      <a class="navButton" id="sponsoringBtn" langPath="navigationTitles.sponsoring">Sponsoring</a>
+      <a class="navButton" id="contactBtn" langPath="navigationTitles.contact">Contact</a>
+    </div>
+    <div id="slideUnderline"></div>
+  </nav>
+
+  <nav id="navMobile">
+    <div class="hamburger-icon" id="icon">
+      <div class="icon-1" id="a"></div>
+      <div class="icon-2" id="b"></div>
+      <div class="icon-3" id="c"></div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="menuSide">
+      <img id="logoMobile" src="./src/imgs/LogoQuer.svg" alt="Ascent Logo">
+      <div id="navButtonsMobile">
+        <a class="navButtonMobile" id="homeBtnMobile" langPath="navigationTitles.home">Home</a>
+        <a class="navButtonMobile" id="competitionBtnMobile" langPath="navigationTitles.competition">Competition</a>
+        <a class="navButtonMobile" id="newsBtnMobile" langPath="navigationTitles.news">News</a>
+        <a class="navButtonMobile" id="aboutUsBtnMobile" langPath="aboutUs">About Us</a>
+        <a class="navButtonMobile" id="sponsoringBtnMobile" langPath="navigationTitles.sponsoring">Sponsoring</a>
+        <a class="navButtonMobile" id="contactBtnMobile" langPath="navigationTitles.contact">Contact</a>
+      </div>
+    </div>
+
+    <div id="otherSide"></div>
+
+  </nav>
+
+  <div id="imageFullScreen">
+    <img alt="">
+    <div class="loadingScreen">
+      <embed src="./src/imgs/showImageFullScreen/Car.svg" alt="Fahrendes Miniatur Auto ">
+    </div>
+    <p langPath="clickOutside">Click outside of the window to close it</p>
+  </div>
+
+  <div id="carReveal">
+    <!-- <video class="carRevealVideo" loop disablepictureinpicture autoplay>
+      <source src="./src/videos/CarReveal.mov" type="video/mov">
+      <source src="./src/videos/CarReveal.mp4" type="video/mp4">
+    </video> -->
+    <img class="carRevealVideo" loading="lazy" src="./src/imgs/carReveal/vorF1Car.jpg" alt="Gruppenfoto">
+    <!-- <img class="carRevealVideo" src="./src/imgs/carReveal/8k Rendering.png" alt="Gruppenfoto"> -->
+    <div id="uiAboveVideo">
+      <h1 langPath="carReveal.theArrow2">The Arrow2</h1>
+
+      <p langPath="carReveal.theArrow2Text">The Arrow2 was our car to the German championship. It crossed the finish line after 1.153 seconds and only wights 55.1g with a length of 23.9cm.</p>
+    </div>
+    <p id="subtitle" langPath="mainTitle">
+      Team Ascent are German Vice Champions
+    </p>
+  </div>
+
+  <div id="beneathCar">
+    <div class="imageWrapper imageFade10">
+      <img src="./whatIsStemracing/imgs/HeaderImage.png" alt="STEM Racing Logo">
+    </div>
+    <div class="text" langPath="shortTexts.whatIsStemRacing">
+      <a href="https://www.stemracing.com" target="_blank">STEM Racing</a> is the worlds largest technology competition for students. It focuses on building a miniature Formular 1 car
+    </div>
+    <button class="readMore" pageId="whatIsStemRacingPage" langPath="readMore">Read More</button>
+    <!-- langPath="readMore" -->
+  </div>
+
+  <div id="aboutUsText">
+    <div class="wrapper">
+      <img src="./aboutUs/imgs/VorAudi.jpg" alt="Gruppenfoto vor Audi">
+    </div>
+    <div class="text" langPath="shortTexts.aboutUs">
+      We are STEM Racing Team Ascent from Hamburg, Germany and are going to the World Finals 2025 in Singapore. 
+    </div>
+    <button class="readMore" pageId="aboutUsPage" langPath="getToKnowUs">Get to know us</button>
+  </div>
+
+
+  <!-- <div id="whatIsSTEMRacing">
+    <h1 class="title" langPath="competition">Competition</h1>
+    <img loading="lazy" src="./src/imgs/StemRacingLogo.png" alt="Stem Racing Logo">
+    <p langPath="whatIsSTEMRacingText">
+        STEM Racing (<a href="https://www.stemracing.com" target="_blank">www.stemracing.com</a>, formerly known as
+        F1 in Schools) is a multi disciplinary international competition in witch students within the age of 11 to 19 design and build a miniature racing car.
+        The car is powered by a CO2 cartridge and has to be build within the rules of the competition. The car is then raced on a 20m long track against other teams.
+        The competition is not only about the car, but also about the presentation of the project. This includes three portfolios, a presentation and a team stand.
+        The competition has been around for many years and is held in many countries around the world. This year it was renamed into STEM Racing.
+    </p>
+  </div> -->
+
+  <div id="theCar">
+
+    <div class="wrapper">
+      <img src="./theCar/imgs/coverMainPage.jpg" alt="Cover Main Page">
+    </div>
+
+    <!-- TODO Better Image -->
+
+    <p class="text" langPath="shortTexts.theCar">
+      <!-- TODO Better Text -->
+      This is our Arrow2, the car that helped us secure the title of the German Vice Champion. It&#8217;s the result of constant testing via CAE analysis, wind tunnel testing and real test drives.
+    </p>
+    <button class="readMore" pageId="theCarPage" langPath="readMore">Read More</button>
+
+  </div>
+
+  <div id="sponsorings">
+    <div class="imageWrapper">
+      <img src="./sponsorings/imgs/Sponsorings.jpg" alt="Sponsoring Collage">
+    </div>
+
+    <div class="text" langPath="shortTexts.sponsoring">
+      We are looking for sponsors for the World Finals in Singapore.
+    </div>
+    <button class="readMore" pageId="sponsoringPage" langPath="readMore">Read More</button>
+  </div>
+
+  <div id="news">
+    <h1 langPath="news">News</h1>
+
+    <div id="wonDM">
+      <h2 langPath="newsArticles.titles.weAreGermanViceChampion">We are German vicechampion</h2>
+      <p langPath="newsArticles.germanViceText">
+          On May 17th, we proudly became German Vice Champions and qualified for the Singapore World Finals 2025.
+          The German Championship was an amazing experience. We met lots of kind and inspiring teams, and our car hit a run time of 1.155 seconds.
+          A huge thank you to all our sponsors for making this possible. It was especially great to meet one of them, the Wilhelm Stemmer Stiftung, at the event.
+          We&#8217;re now super excited to continue our journey and head to Singapore with Blue Wolves and Echo Racing. Let&#8217;s go Team Germany!
+      </p>
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/dmWon.jpg"
+        alt="Foto von uns mit dem 2. Platz">
+        
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/teamstandDM.jpg"
+        alt="Foto von unserem Teamstand bei der DM">
+
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/prices.jpeg"
+        alt="Foto von unseren Preisen">
+    </div>
+
+    <div id="prepForDM">
+      <h2 langPath="newsArticles.titles.prepDM">Vorbereitungen für die Deutsche Meisterschaft</h2>
+      <p langPath="newsArticles.prepForDM">
+        After winning the Hamburg Championship, we immediately started preparations for the German Championship the next day.
+        At the kickoff meeting, we established slightly adjusted responsibilities and carried out time and budget planning.
+        Currently, we are actively working on a prototype and sponsor acquisition.
+        We are improving our laser measurement system and making initial decisions regarding our team booth.
+      </p>
+      <img loading="lazy" src="./src/imgs/news/discrodScreenshot.png" alt="Bildschirm mit Discord geöffnet">
+    </div>
+
+    <div id="teamWonHH">
+      <h2 langPath="newsArticles.titles.weAreHamburgerChapion">We are Hamburger champion!</h2>
+      <div class="textWrapper">
+        <p langPath="newsArticles.weAreHamburgerChapionText">
+            At the Hamburger championship on the 22<sup>th</sup> of February 2025 we were able to win the first place and qualify for the German championship.
+            Our car was the fastest of them all with a time of 1.203 seconds. We also won 5 special prices:
+        </p>
+        <ul id="extraPrices">
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_SchnellstesAuto.jpg" data-name="fastestCar" langPath="specialAwards.fastestCar">fastest Car</li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_PortfolioUnternehmen.jpg" data-name="bestPortfolioCompany" langPath="specialAwards.bestPortfolioCompany">best portfolio enterprise</li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_PortfolioTechnik.jpg" data-name="bestPortfolioTechnology" langPath="specialAwards.bestPortfolioTechnology">bestes electronic portfolio</li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_Konstruktionspreis.jpg" data-name="constructionPrice" langPath="specialAwards.constructionPrice">construction price</li>
+          <li data-url="./src/imgs/documentsPrices/Urkunden HM25_muendlichePraesentation.jpg" data-name="bestPresentation" langPath="specialAwards.bestPresentation">best presentation</li>
+        </ul>
+      </div>
+      <img loading="lazy" imgTeam="" src="./src/imgs/news/fotoTeamStand1.jpg"
+        alt="Foto von unserem Teamstand mit den Urkunden">
+      <img loading="lazy" imgRenn="" src="./src/imgs/news/fotorennbahn.jpg" alt="Foto von der Rennbahn">
+    </div>
+  </div>
+  
+  {{{CONTACT_FORMULAR}}}
+
+  {{{FOOTER}}}
+
+  <div id="otherPages">
+    <iframe src="./policy/index.html" frameborder="0" id="policyFrame" class="hidden"></iframe>
+    <iframe src="./impressum/index.html" frameborder="0" id="impressumFrame" class="hidden"></iframe>
+    <iframe src="./whatIsStemracing/index.html" frameborder="0" id="whatIsStemRacingPage" class="hidden"></iframe>
+    <iframe src="./gallery/index.html" frameborder="0" id="galleryPage" class="hidden"></iframe>
+    <iframe src="./theCar/index.html" frameborder="0" id="theCarPage" class="hidden"></iframe>
+    <iframe src="./aboutUs/index.html" frameborder="0" id="aboutUsPage" class="hidden"></iframe>
+    <iframe src="./sponsorings/index.html" frameborder="0" id="sponsoringPage" class="hidden"></iframe>
+  </div>
+
+  <div id="languageToggle" lang="en">
+    <div class="english">
+      <img loading="eager" src="./src/imgs/langToggle/english.png" alt="English" id="englishFlag">
+    </div>
+    <div class="german">
+      <img loading="eager" src="./src/imgs/langToggle/german.jpg" alt="German" id="germanFlag">
+    </div>
+  </div>
+
+</body>
+
+</html>

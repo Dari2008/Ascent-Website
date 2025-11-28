@@ -1,0 +1,41 @@
+{
+  "name": "websitedm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@types/gsap": "^3.0.0",
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^22.15.21",
+    "@types/random": "^3.0.1",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "@types/typescript": "^2.0.0",
+    "@types/user-agents": "^1.0.4",
+    "@types/uuid": "^10.0.0",
+    "device-detector-js": "^3.0.3",
+    "gsap": "^3.12.7",
+    "jquery": "^3.7.1",
+    "justified-layout": "^4.1.0",
+    "justified-mosaic": "^1.0.0",
+    "justifiedGallery": "^3.8.1",
+    "lightgallery": "^2.8.3",
+    "nanogallery2": "^3.0.5",
+    "node": "^22.16.0",
+    "path": "^0.12.7",
+    "random": "^5.4.0",
+    "react-dom": "^19.1.0",
+    "user-agents": "^1.1.546",
+    "uuid": "^11.1.0",
+    "vite-plugin-full-reload": "^1.2.0"
+  }
+}

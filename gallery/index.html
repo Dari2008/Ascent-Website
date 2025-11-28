@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="overflowWhenVisible">
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title langPath="gallery.titleDoc">Gallery - Team Ascent</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./scss/allStyles.css' vite-ignore>
+        <script>var exports = {};</script>
+        <script type="module" src='./ts/main.js' defer vite-ignore></script>
+        <script src="./ts/jquery-3.7.1.min.js" vite-ignore></script>
+        <script src="./ts/jquery.justifiedGallery.min.js" vite-ignore></script>
+    </head>
+
+    <body>
+
+        <div class="headerDiv">
+            <img src="./imgs/headerImage.png" alt="Image of collage" class="headerImage" loading="lazy" vite-ignore>
+        </div>
+
+        <h1 id="titleGallery" langPath="gallery.title">Gallery</h1>
+
+        <div class="center">
+            <div id="gallery"></div>
+        </div>
+        <button id="loadMore">Show More</button>
+
+    </body>
+
+</html>

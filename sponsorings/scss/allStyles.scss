@@ -1,0 +1,171 @@
+@use "../../src/scss/Variables.scss" as *;
+@use "../../src/scss/Settings.scss" as *;
+@use "../../src/scss/bgStyles.scss" as *;
+@use "../../src/scss/globalStyles.scss" as *;
+@use "../../src/scss/clamp.scss" as *;
+@use "sass:math";
+
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+$worldSize: 1;
+$germanSite: 0.9;
+$hamburgerSite: 0.8;
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: "Poppins";
+    color: $textColor;
+    width: 80%;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-align: justify;
+    align-self: center;
+}
+
+.teamColor{
+    color: $teamColor;
+}
+
+h1 {
+    @extend .title;
+    font-family: "Agrandir Bold";
+    font-size: 2.5rem;
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+}
+
+.headerDiv {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.headerImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    aspect-ratio: $elementAspectRatio;
+}
+
+.headerDiv::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: $imageFadeOut;
+}
+
+.text{
+    @extend .defaultElementOnMainPage;
+    @extend .defaultMainElement;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+h2, h3{
+    @extend .title;
+    font-family: "Agrandir Bold";
+    font-size: clampW(1.1em, 2.5em, 200px, 2000px);
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    font-size: clampW(0.8em, 1.8em, 200px, 2000px);
+}
+
+.world{
+    scale: $worldSize;
+}
+
+.german{
+    scale: $germanSite;
+}
+
+.hamburger{
+    scale: $hamburgerSite;
+}
+
+@media (width < #{600 * math.div($iframeWidthInPercent, 100%)}px) {
+    .headerDiv, .headerImage{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/7;
+    }
+}
+
+@media (width < 800px){
+    .visible .headerDiv, .visible .headerImage{
+        aspect-ratio: 16/9 !important;
+        width: 100%;
+        height: auto;
+    }
+}
+
+table{
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    color: $white;
+}
+
+table tr{
+    width: 100%;
+}
+
+table th.title{
+    width: 100%;
+}
+
+table tr th:not(.title):first-of-type{
+    width: 20%;
+    text-align: end;
+}
+
+table tr th:not(.title):last-of-type{
+    width: 80%;
+    text-align: start;
+}
+
+#bank{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    margin-block: 3em;
+}
+
+#bank div img{
+    width: 30vw;
+    max-width: 400px;
+    min-width: 50px;
+}
+
+
+@media (width < 1500px){
+    #bank{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

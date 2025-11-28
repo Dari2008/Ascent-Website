@@ -1,0 +1,239 @@
+@use "../../src/scss/Variables.scss" as vars;
+@use "../../src/scss/Settings.scss" as settings;
+@use "../../src/scss/clamp.scss" as *;
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("/src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em; 
+    width: 80%;
+    margin: auto;
+    background-color: vars.$teamColor;
+    border-radius: 20px;
+    padding: 20px;
+    // margin-bottom: vars.$elementSpacing;
+    margin-bottom: 6em;
+}
+
+#contact a{
+    color: vars.$textColor;
+    text-decoration: none;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#contact #ownMessage{
+    grid-area: 1 / 2 / 6 / 3;
+}
+
+
+
+#contact h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: clampW(1em, 2.3em, 200px, 2000px);
+    text-align: center;
+    @if(settings.$useLetterSpacingInHeaders == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#contact .mail{
+    grid-area: 2 / 1 / 3 / 2;  
+}
+
+#contact .phone{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#contact .insta{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#contact .whatsapp{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+#contact .mail img,
+#contact .phone img,
+#contact .insta img,
+#contact .whatsapp img{
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#contact .mail,
+#contact .phone,
+#contact .insta,
+#contact .whatsapp{
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 6%;
+    grid-row-gap: 0px;
+    cursor: pointer;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#contact .mail a,
+#contact .phone a,
+#contact .insta a,
+#contact .whatsapp a{
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: start;
+    align-self: center;
+}
+
+#contact .mail:hover a,
+#contact .phone:hover a,
+#contact .insta:hover a,
+#contact .whatsapp:hover a {
+    font-weight: bolder;
+}
+
+$ownMessageBgColor: vars.$gray-700;
+
+#ownMessage{
+    background-color: $ownMessageBgColor;
+    border-radius: 14px;
+}
+
+#ownMessage{
+    padding-left: 10%;
+    padding-right: 0px;
+    height: auto;
+}
+
+
+#ownMessage textarea{
+    min-height: 33px;
+}
+
+#ownMessage input, #ownMessage textarea{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    resize: vertical;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 3px solid vars.$teamColor;
+    caret-color: vars.$teamColor;
+    color: vars.$textColor;
+    font-size: clampW(0.7em, 1.3em, 200px, 2000px);
+    padding: 0;
+    margin-top: 5%;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#ownMessage input:first-of-type{
+    margin-top: 7%;
+}
+
+#ownMessage input::selection, #ownMessage textarea::selection{
+    color: vars.$textColor;
+    background-color: vars.$teamColor;
+}
+
+#ownMessage input::placeholder, #ownMessage textarea::placeholder{
+    color: darken(vars.$textColor, 20%);
+    padding: 0;
+    margin: 0;
+}
+
+#sendMessage{
+    @extend .text;
+    width: 100%;
+    height: clampW(2em, 1.8em, 200px, 2000px);
+    border-radius: 10px;
+    background-color: vars.$teamColor;
+    transform: translateX(-5%);
+    margin-top: 30px;
+    font-size: clampW(1em, 2em, 200px, 2000px);
+    color: vars.$textColor;
+    cursor: pointer;
+    margin-bottom: 3%;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#sendMessage:hover{
+    background-color: vars.$teamColorSecondary2;
+}
+
+#sendMessage:active{
+    background-color: vars.$teamColorSecondary3;
+}
+
+#ownMessage input.error, #ownMessage textarea.error{
+    border-bottom: 3px solid vars.$errorColor;
+}
+
+@media (width < 1650px){
+    #contact .mail a, 
+    #contact .phone a, 
+    #contact .insta a{
+        font-size: clampW(0.6em, 1.3em, 200px, 2000px);
+    }
+
+    // #contact h2{
+    //     font-size: clamp(0.7rem, 0.5818rem + 1.8909vw, 2em);
+    // }
+
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px; 
+        width: 95%;
+    }
+
+    #contact h2{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #contact .mail{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #contact .phone{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    #contact .insta{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    #contact #ownMessage{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    // #contact h2{
+    //     font-size: vars.$titleFontSizeMobile;
+    //     line-height: 2.5em * settings.$scaleFontSizeMobile;
+    // }
+
+
+
+}

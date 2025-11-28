@@ -1,0 +1,74 @@
+@use "./Variables.scss" as vars;
+
+#languageToggle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    position: fixed;  
+    top: calc(100% - 5em);
+    right: 2em;
+    z-index: 10000000000000;
+    width: 6vw;
+    height: 2.5vw;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 125px;
+    min-height: 41.6px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    aspect-ratio: 6/2.5;
+}
+
+#languageToggle .german,
+#languageToggle .english{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#languageToggle .english{
+    grid-area: 1 / 1 / 2 / 2;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#languageToggle .german{
+    grid-area: 1 / 2 / 2 / 3;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#languageToggle img{
+    max-height: 90%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#languageToggle[lang="en"] .english,
+#languageToggle[lang="de"] .german{
+    border: 2px solid vars.$teamColor;
+}
+
+#languageToggle[lang="de"] .english,
+#languageToggle[lang="en"] .german{
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+}
+
+#languageToggle[lang="de"] .english img,
+#languageToggle[lang="en"] .german img{
+    scale: 0.7;
+    opacity: 0.6;
+}

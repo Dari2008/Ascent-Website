@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/icons/favicon-16x16.png">
+        <link rel="manifest" href="./src/icons/site.webmanifest">
+        <link rel="shortcut icon" href="./src/icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./src/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+      
+
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Team Ascent</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        
+        <!-- Search engine -->
+        <meta name="title" content="Ascent - F1 in schools" />
+        <meta name="description"
+            content="Wir sind das Team Ascent, eine Gruppe von sechs leidenschaftlichen Schülern, die am internationalen Wettbewerb Stem-Racing (ehemalig F1 in Schools) teilnehmen." />
+        <meta name="keywords" content="Ascent Racing, Racing, Team, Racing Team, Racing Team Ascent, Ascent, Racing, Stem Racing, Stem, Miniatur, Auto, Minatur Auto, World Championship, World, Championship, Weltmeisterschaft, Welt, Meisterschaft" />
+        <meta name="author" content="Ascent" />
+        <meta name="robots" content="index, follow" />
+        <meta name="revisit-after" content="3 days" />
+        <!-- <script type="module" src='./src/ts/index.ts' defer></script> -->
+
+    </head>
+    <body>
+        <style>
+                
+            body, html{
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                border: 0px;
+                overflow: hidden;
+            }
+
+            iframe{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+            }
+
+            #mainLoadingScreen{
+                display: flex;
+                position: fixed;
+                backdrop-filter: blur(10px);
+                width: 100%;
+                height: 100%;
+                background-color: #212121;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mainLoadingScreen embed{
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            #mainLoadingScreen.hide{
+                display: none;
+            }
+        </style>
+        <div id="mainLoadingScreen">
+            <!-- Hallo weökklö -->
+            <embed src="/showImageFullScreen/Car.svg" alt="Fahrendes Miniatur Auto" type="image/svg+xml" vite-ignore>
+        </div>
+        <iframe src="./main.html" frameborder="0" async id="iframe" title="mainFrame"></iframe>
+
+        
+        <script>
+            addEventListener("message", function(event) {
+                const data = event.data;
+                if(data.type === "setTitle"){
+                    document.title = data.title;
+                }else if(data.type === "navigateTo"){
+                    const dataD = event.data;
+                    const data = dataD.data;
+                    const path = dataD.path;
+                    const pathCompiled = path==="home"||path==""?"/":path;
+                    window.history.pushState(data, pathCompiled, "");
+                }
+            });
+
+            const iframe = document.getElementById("iframe");
+
+            addEventListener("popstate", function(event) {
+                iframe.contentWindow.postMessage({
+                    type: "popstate",
+                    data: event.state
+                }, "*");
+            });
+
+
+            document.getElementById("iframe").addEventListener("load", function(){
+                document.getElementById("mainLoadingScreen").classList.add("hide");
+            });
+        </script>
+    </body>
+</html>

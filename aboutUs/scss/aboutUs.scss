@@ -1,0 +1,190 @@
+@use "../../src/scss/Variables.scss" as vars;
+@use "../../src/scss/Settings.scss" as settings;
+@use "../../src/scss/clamp.scss" as *;
+
+#aboutUs{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: min-content repeat(3, min-content); 
+    grid-column-gap: 4em;
+    grid-row-gap: 3em;
+    width: 90%;
+    margin: auto;
+    padding-block: vars.$elementSpacing;
+}
+
+#aboutUs h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    font-size: calmpW(2em, 2.4em);
+    color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+#aboutUs #benjamin{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#aboutUs #florian{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#aboutUs #kjell{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#aboutUs #darius{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#aboutUs #moritz{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#aboutUs #vincent{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+
+#aboutUs .personAboutUs{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 2.5em min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    height: min-content;
+}
+
+// #aboutUs .personAboutUs .texts{
+//     grid-area: 1 / 2 / 2 / 3;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: stretch;
+//     align-items: center;
+//     height: min-content;
+// }
+
+#aboutUs .personAboutUs img{
+    grid-area: 1 / 1 / 3 / 2;
+    max-width: 100%;
+    transform: scale(0.7);
+    transform-origin: top center;
+    height: min-content;
+    aspect-ratio: 353/512;
+}
+
+#aboutUs .personAboutUs h2{
+    grid-area: 1 / 2 / 2 / 3;
+    @extend .title;
+    margin: 0px;
+    color: vars.$teamColor;
+    text-wrap: nowrap;
+    height: min-content
+}
+
+#aboutUs .personAboutUs p{
+    grid-area: 2 / 2 / 3 / 3;
+    @extend .text;
+    font-size: clampW(0.8em, 1.2em, 200px, 2000px);
+    height: min-content;
+    text-align: justify;  
+    align-self: center;
+}
+
+#aboutUs a{
+    cursor: pointer;
+}
+
+
+@media (width < 1650px){
+
+    #aboutUs{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content repeat(6, min-content);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px; 
+    }
+
+    #aboutUs .personAboutUs p{
+        height: min-content;
+    }
+
+    #aboutUs h1{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #aboutUs #benjamin{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #aboutUs #florian{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    #aboutUs #kjell{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    #aboutUs #darius{
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    #aboutUs #moritz{
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    #aboutUs #vincent{
+        grid-area: 7 / 1 / 8 / 2;
+    }
+
+    #aboutUs .personAboutUs{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, min-content);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px; 
+    }
+
+    #aboutUs .personAboutUs h2{
+        grid-area: 1 / 1 / 2 / 2;
+        text-wrap: initial;
+        text-align: center;
+    }
+
+    #aboutUs .personAboutUs img{
+        grid-area: 2 / 1 / 3 / 2;
+        transform: scale(1);
+        // width: 100%;
+        justify-self: center;
+        height: min-content;
+        aspect-ratio: 353/512;
+        max-height: 300px;
+    }
+
+    #aboutUs .personAboutUs p{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    // #aboutUs h1{
+    //     font-size: vars.$titleFontSizeMobile;
+    //     line-height: 2.5em * settings.$scaleFontSizeMobile;
+    // }
+
+    // #aboutUs .personAboutUs h2{
+    //     font-size: 2em * settings.$scaleFontSizeMobile;
+    // }
+
+    // #aboutUs .personAboutUs .texts p{
+    //     // font-size: 1em * settings.$scaleFontSizeMobile;
+    //     line-height: 2rem * settings.$scaleFontSizeMobile;
+    // }
+
+}
+
+// @media (width < 750px){
+
+// }

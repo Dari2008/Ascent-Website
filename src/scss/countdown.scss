@@ -1,0 +1,131 @@
+@use "./Variables.scss" as vars;
+@use "./Settings.scss" as settings;
+@use "./navBar.scss" as navBar;
+
+$countdownHeight: 5em;
+$countdownBottomHeight: 22vh;
+
+#countdown{
+    position: fixed;
+    top: navBar.$navBarHeight;
+    left: 0px;
+    height: $countdownHeight;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10000;
+    background: transparent;
+    padding: 20px;
+    background: linear-gradient(90deg, #212121, vars.$teamColor);
+    border-top: 2px solid white;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transform-origin: 50% 0%;
+}
+
+#countdown.visible{
+    transform: translateY(0%);
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    will-change: auto;
+    opacity: 0.9;
+}
+
+#countdown .close{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: white;
+    font-size: 2em;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    transform-origin: 50% 50%;
+}
+
+#countdown .close .plus{
+    font-size: 1.5em;
+    transform: rotate(45deg);
+    display: block;
+    transform-origin: 50% 50%;
+}
+
+#countdown .close .plus:hover{
+    transform: scale(1.1) rotate(45deg);
+}
+
+#countdown .close .plus:active{
+    transform: scale(0.9) rotate(45deg);
+}
+
+#countdown p{
+    @extend .title;
+    color: vars.$textColor;
+    font-size: 1.8em;
+}
+
+#countdown embed{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding-block: 0px;
+}
+
+#countdown.hidden{
+    display: none;
+}
+
+@media (width < 1200px){
+
+    #countdown{
+        top: 100%;
+        transform: translateY(0%);
+        transform-origin: 50% 100%;
+        display: flex;
+        flex-direction: column;
+        height: $countdownBottomHeight;
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    }
+
+    #countdown.visible{
+        transform: translateY(-100%);
+        transform-origin: 50% 100%;
+        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        will-change: auto;
+        opacity: 1;
+    }
+    
+    #countdown p{
+        font-size: clampW(1.5em, 1.8em, 500px, 1200px);
+        margin: 0px;
+    }
+
+    #countdown .close .plus{
+        font-size: 1em;
+        top: 5px !important;
+        transform: none !important;
+    }
+
+    #countdown embed{
+        backdrop-filter: blur(41px);
+    }
+
+
+}
+
+@media (width < 1330px) and (width > 1200px){
+    #countdown p{
+        font-size: clamp(1.3rem, -2.3923rem + 4.9231vw, 1.7rem);
+    }
+}
+
+@media (width < 500px){
+    #countdown{
+        display: none;
+    }
+}

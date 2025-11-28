@@ -1,0 +1,428 @@
+@use "./Variables.scss" as vars;
+@use "./Settings.scss" as settings;
+
+#sponsoring{
+    width: 80%;
+    margin: auto;
+    padding-block: vars.$elementSpacing;
+    display: flex;
+    flex-direction: column;
+}
+
+#sponsoring h1{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 2;  
+    text-align: center;
+    font-size: 3em;
+}
+
+#whySponsorings{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin-block: 5%;
+    width: min-content;
+    justify-self: center;
+    width: 100%;
+}
+
+#whySponsorings h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 2;
+    color: vars.$teamColor;
+    font-size: 2em;
+    text-align: center;
+}
+
+#whySponsorings p{
+    @extend .text;
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 1.5em;
+}
+
+#whySponsorings h3{
+    @extend .text;
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 1em;  
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+#whySponsorings #graph{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#whySponsorings #graphImage{
+    max-width: 100%;
+    padding: 30px;
+}
+
+
+#returnment{
+    display: grid;
+    grid-template-columns: 43% 18% 27%;
+    grid-template-rows: min-content min-content;
+    grid-column-gap: 6%;
+    grid-row-gap: 0px; 
+    margin-block: 5%;
+    justify-self: center;
+}
+
+#returnment h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 4;
+    color: vars.$teamColor;
+    font-size: 2em;
+    text-align: center;
+}
+
+#returnment img{
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    margin: 5%;
+    justify-self: center;
+    align-self: center;
+    border: 5px solid #EEE;
+}
+
+#returnment img[imgNewSponsorPost=""]{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#returnment img[imgCarLogos=""]{
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#returnment ul{
+    @extend .text;
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#sponsorsUntilNow{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-block: 5%;
+}
+
+#sponsorsUntilNow h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 2em;
+    color: vars.$teamColor;
+    text-align: center;
+}
+
+#sponsorGrid{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, max(15vw, 15vh));
+    grid-template-rows: repeat(4, max(15vw, 15vh));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em; 
+    // width: calc(max(15vw, 15vh)*3);
+    width: auto;
+    justify-self: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+#sponsorGrid img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    margin: 1em;
+    cursor: pointer;
+}
+
+#sponsorGrid img[alt="Awork Logo"]{
+    width: 100%;
+}
+
+#sponsorUs{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+#sponsorUs h2{
+    @extend .title;
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 2em;
+    color: vars.$teamColor;
+    width: 100%;
+    text-align: center;
+}
+
+#sponsorUs #gofundmeEmbedd{
+    @extend .text;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#sponsorUs div .gofundmetext{
+    margin: 20px;
+    margin-left: 0px;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#sponsorUs .gofundme{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.centerAllGoFundMe{
+    justify-self: center;
+    align-self: center;
+}
+
+#sponsorUs .gofundme img[alt="Gruppen Foto"]{
+    @extend .centerAllGoFundMe;
+    border-radius: 30px;
+    max-width: 100%;
+}
+
+#sponsorUs .gofundme h3{
+    @extend .centerAllGoFundMe;
+    text-align: center;
+}
+
+#sponsorUs .gofundme p{
+    @extend .centerAllGoFundMe;
+    font-size: 0.9em;
+    text-align: start;
+    width: 100%;
+    padding-inline: 30px;
+}
+
+#sponsorUs .gofundme .donateBtnDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sponsorUs .gofundme .donateNow{
+    justify-self: end;
+    align-self: center;
+}
+
+.donateNow button{
+    text-align: end;
+    padding: 15px;
+    background-color: vars.$teamColor;
+    color: vars.$textColor;
+    border-radius: 30px;
+    height: 50%;
+    cursor: pointer;
+    font-size: clamp(0.7rem, 0.5818rem + 1.8909vw, 2em);
+    text-wrap: nowrap;
+}
+
+.donateNow button:hover{
+    background-color: vars.$teamColorSecondary2;
+}
+
+.donateNow button:active{
+    background-color: vars.$teamColorSecondary3;
+}
+
+#sponsorUs .gofundme svg{
+    height: 50%;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    color: #02a95c;
+    width: 50%;
+}
+
+#sponsorUs .gofundme svg:hover{
+    color: lighten(#02a95c, 10%);
+}
+
+#sponsorUs .gofundme svg:active{
+    color: darken(#02a95c, 10%);
+}
+
+.gofundme{
+    background-color: darken(vars.$teamColor, 40%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#gofundmeEmbedd{
+    justify-self: center;
+    width: 50%;
+    display: grid;
+}
+
+@media (width < 1200px){
+
+    #sponsoring{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #sponsorGrid{
+        width: min-content;
+        justify-self: center;
+        align-self: center;
+        padding: 10px;
+    }
+
+    #whySponsorings{
+        grid-template-rows: min-content min-content min-content min-content;
+        width: 95%;
+        margin: auto;
+    }
+
+    #whySponsorings #graphImage{
+        padding-block: 10px;
+        padding-inline: 0px;
+    }
+
+    #returnment{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+
+    #returnment h2{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    #returnment img[imgnewsponsorpost=""]{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    #returnment img[imgcarlogos=""]{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    #returnment ul{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    #gofundmeEmbedd{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sponsoring h1{
+        font-size: vars.$titleFontSizeMobile;
+        line-height: 2.5em * settings.$scaleFontSizeMobile;
+    }
+    
+    #sponsoring h2{
+        font-size: 2em * settings.$scaleFontSizeMobile;
+        line-height: 2.5em * settings.$scaleFontSizeMobile;
+    }
+
+    #sponsoring p{
+        font-size: 1.5em * settings.$scaleFontSizeMobile;
+        line-height: 2em * settings.$scaleFontSizeMobile;
+    }
+
+    #sponsoring h3{
+        font-size: 1em * settings.$scaleFontSizeMobile;
+        line-height: 2em * settings.$scaleFontSizeMobile;
+    }
+
+    #returnment li{
+        font-size: 1em * settings.$scaleFontSizeMobile;
+        line-height: 2em * settings.$scaleFontSizeMobile;
+    }
+
+
+    #sponsorUs .gofundmetext{
+        font-size: 1.4em * settings.$scaleFontSizeMobile;
+        line-height: 1.5em * settings.$scaleFontSizeMobile;
+    }
+
+    #sponsorUs .donateNow{
+        font-size: clamp(0.7rem, 0.5818rem + 1.8909vw, 2em);
+    }
+
+}
+
+@media (width < 540px) {
+    #sponsorGrid{  
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: min(80%, 80vh);
+    }
+
+    #sponsorUs .donateBtnDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sponsorUs .donateNow button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 30px;
+    }
+
+}
+
+#marginSponsoring{
+    height: vars.$elementMarginMainPage;
+}
+
+#sponsorings{
+    @extend .defaultMainElement;
+    display: flex;
+    flex-direction: column;
+    padding-block: calc(vars.$elementMarginMainPage / 2);
+
+    .imageWrapper{
+        @extend .imageFade20;
+        width: 100%;
+    }
+    
+
+    .imageWrapper{
+        width: var(--width);
+        height: var(--height);
+    }
+
+    .imageWrapper img, .imageWrapper iframe{
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: vars.$elementAspectRatio;
+    }
+
+    .text{
+        @extend .defaultElementOnMainPage;
+        text-align: justify;
+        align-self: center;
+    }
+}
+
+@media (width < 600px){
+    #sponsorings img, #sponsorings iframe{
+        aspect-ratio: 16/7 !important;
+    }
+}

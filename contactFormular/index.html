@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/contactFormular/scss/allStyles.css">
+  <div id="contact">
+    <h2 langPath="contactFormular.contactUsNow">Contact Us Now!</h2>
+
+    <div class="mail" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="/contactFormular/imgs/Email.png" alt="Email">
+      <a href="mailTo: team@ascent-racing.com">team@ascent-racing.com</a>
+    </div>
+
+    <div class="phone" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="/contactFormular/imgs/telephone.png" alt="Telefon">
+      <a href="tel: +49 152 0653 2230">+49 152 0653 2230 - Benjamin Hillmann</a>
+    </div>
+
+    <div class="insta" onclick="this.querySelector('a').click()">
+      <img loading="lazy" src="/contactFormular/imgs/insta.png" alt="Instagram">
+      <a href="https://instagram.com/ascent.racing/" target="_blank">Ascent.racing</a>
+    </div>
+
+    <div class="whatsapp" onclick="this.querySelector('a').click()">
+      <img src="/contactFormular/imgs/WhatsApp.svg" alt="WhatsApp">
+      <a href="https://whatsapp.com/channel/0029Vb5epgZ0rGiTudaU8K2o" target="_blank">Ascent</a>
+    </div>
+
+    <div class="sendBtnAnimation" id="ownMessage">
+      <span class="default">
+        <input type="text" name="" id="name" placeholder="Your Name" placeholderPath="contactFormular.yourName">
+        <input type="email" name="" id="email" placeholder="Your E-mail adresse" placeholderPath="contactFormular.yourEmail">
+        <textarea name="" id="message" placeholder="Message" placeholderPath="contactFormular.yourMessage"></textarea>
+        <button id="sendMessage" langPath="contactFormular.sendMessage">
+          Send
+        </button>
+      </span>
+      <span class="success">
+        <span class="mark">&#10003;</span><span langPath="contactFormular.messageSent">Sent</span>
+      </span>
+      <svg class="trails" viewBox="0 0 33 64">
+        <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
+        <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+      </svg>
+      <div class="plane">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+  </div>

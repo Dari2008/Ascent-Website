@@ -1,0 +1,20 @@
+@use "./Settings.scss" as settings;
+@use "./Variables.scss" as vars;
+@use "./clamp.scss" as *;
+
+.readMore{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    font-size: clampW(0.7em, 1.7em, 200px, 2000px);
+    text-align: center;
+    border-radius: 50em;
+    color: vars.$teamColor;
+    background-color: transparent;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+}

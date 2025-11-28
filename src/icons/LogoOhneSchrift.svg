@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="366.991"
+   height="366.991"
+   viewBox="0 0 366.991 366.991"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Logo - Kopie.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.88438619"
+     inkscape:cx="271.94002"
+     inkscape:cy="-51.448112"
+     inkscape:window-width="1920"
+     inkscape:window-height="1177"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-55.312637,-26.567606)">
+    <g
+       id="g1"
+       transform="matrix(1.2765957,0,0,1.2187057,-22.330505,68.451031)">
+      <path
+         id="path3"
+         style="fill:#ec008c;fill-opacity:1"
+         transform="matrix(0.99830004,-0.00867187,0.0093892,0.92203117,61.322444,30.513013)"
+         d="M 267,180 206.13731,179.40941 142.97328,53.885019 77.308174,178.15928 16.597136,177.57016 115.83938,9.4659618 171.02795,9.9827163 Z" />
+      <path
+         id="path3-6-7-5"
+         style="display:inline;fill:#ec008c;fill-opacity:1"
+         transform="matrix(0.39932002,-0.0038156,0.00375568,0.4056937,147.27709,127.63921)"
+         d="m 24.780137,163.70916 26.493425,-44.87662 182.093338,1.58544 25.67866,45.49049 z" />
+      <path
+         id="path3-6-7"
+         style="display:inline;fill:#000000;fill-opacity:1"
+         transform="matrix(0.19966001,-0.0019078,0.00187784,0.20284685,175.92863,119.78281)"
+         d="M 267,180 C 183.53885,178.45022 100.06888,178.04243 16.597136,177.57016 L 80.25,69.750003 143.90287,-38.070159 205.45143,70.964917 Z" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="overflowWhenVisible">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>GoFundMe</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./scss/allStyles.css' vite-ignore>
+        <!-- <script src='main.js'></script> -->
+    </head>
+    <body>
+        <div class="headerDiv">
+            <img src="./imgs/HeaderImage.png" alt="Gofuundme" class="headerImage" loading="lazy" vite-ignore>
+        </div>
+
+        <h1>GoFundMe</h1>
+        
+        <div class="text">
+            <p langPath="gofundme.whyWeNeedYourHelp">
+                <span class="teamColor agrandir big">Why we need your help:</span>
+                <br />
+                With competing, there are significant costs involved: 
+            </p>
+
+            <ul>
+                <li langPath="gofundme.registrationFees">We need to pay around 10,600€ for registration</li>
+                <li langPath="gofundme.travelCosts">About 19,000€ for our rooms at the official competition hotel</li>
+            </ul>
+
+            <p langPath="gofundme.whyWeNeedYourHelpPart2">
+                Our calculated total budget will be around 50k.
+                We are a team of six 10th grade students and cannot cover these expenses on our own. We are actively seeking sponsors and supporters - and this is where we need you.
+                We must book our rooms in the official competition hotel within the next 3 weeks. If we can't secure the necessary funds in time, we won't be able to participate in the World Finals. 
+            </p>
+        </div>
+
+        <div id="buttonDiv">
+            <button 
+                langPath="gofundme.openGoFundMe" 
+                onclick="window.open('https:\/\/www.gofundme.com/f/help-ascent-represent-germany-at-stem-racing-world-finals', '_blank');"
+            >
+                Open GoFundMe
+            </button>
+            <button 
+                langPath="gofundme.donateNow" 
+                onclick="window.open('https:\/\/www.gofundme.com/f/help-ascent-represent-germany-at-stem-racing-world-finals/donate?source=btn_donate', '_blank');"
+            >
+                Donate now!
+            </button>
+        </div>
+
+        {{{FOOTER}}}
+
+    </body>
+</html>

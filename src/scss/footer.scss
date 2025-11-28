@@ -1,0 +1,307 @@
+@use "./Variables.scss" as vars;
+@use "./Settings.scss" as settings;
+
+#copyrightETC{
+    border-top: 1px solid vars.$gray-600;
+    padding-top: 3%;
+    user-select: none;
+}
+
+#footers{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright{
+    text-align: center;
+    color: vars.$textColor;
+    padding: 20px;
+    font-size: 0.7em;
+    width: 80%;
+    margin: auto;
+    padding-block: 5px;
+}
+
+.contactFormFooter{
+    width: vars.$widthPerElementInFooter;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px; 
+    color: vars.$textColor;
+    height: min-content;
+}
+
+.contactFormFooter p{
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    height: min-content;
+    cursor: pointer;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+.contactFormFooter h3, 
+.footerMenu h3,
+.newsletterAbo h3{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    @if(settings.$useLetterSpacingInHeaders == 1){
+        letter-spacing: 2px;
+    }
+}
+
+.contactFormFooter .mobile{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+}
+
+.contactFormFooter .email{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.contactFormFooter .insta{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.contactFormFooter .linkedIn{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.footerMenu{
+    width: vars.$widthPerElementInFooter;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, min-content);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px; 
+    color: vars.$textColor;
+    height: min-content;
+}
+
+.footerMenu h3{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.footerMenu a{
+    cursor: pointer;
+    width: max-content;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+.footerMenu .footerHome{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.footerMenu .footerCompetition{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.footerMenu .footerNews{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.footerMenu .footerAboutUs{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.footerMenu .footerSponsoring{
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.footerMenu .footerContact{
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+
+.newsletterAbo{
+    width: vars.$widthPerElementInFooter;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    color: vars.$textColor;
+    height: min-content;
+}
+
+.newsletterAbo h3{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.newsletterAbo .emailInput{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.newsletterAbo .emailInput #emailNewsletter{
+    grid-area: 1 / 1 / 2 / 2;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    color: vars.$textColor;
+    caret-color: vars.$teamColor;
+    font-size: 1.2em;
+    padding: 0;
+    border-bottom: 3px solid vars.$teamColor;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+.newsletterAbo .emailInput #emailNewsletter::placeholder{
+    color: darken(vars.$textColor, 20%);
+}
+
+.newsletterAbo .emailInput #emailNewsletter::selection{
+    background-color: vars.$teamColor;
+    color: vars.$textColor;
+}
+
+.newsletterAbo .emailInput #emailNewsletter.error{
+    border-bottom: 3px solid vars.$errorColor;
+}
+
+.newsletterAbo .emailInput #newsletterBtn{
+    @extend .title;
+    grid-area: 1 / 2 / 2 / 3; 
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: vars.$teamColor;
+    color: vars.$textColor;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+.newsletterAbo .emailInput #newsletterBtn:hover{
+    background-color: darken(vars.$teamColor, 10%);
+}
+
+.newsletterAbo .emailInput #newsletterBtn:active{
+    background-color: lighten(vars.$teamColor, 10%);
+}
+
+.newsletterAbo .emailInput #newsletterBtn.success{
+    .success{
+        display: block;
+    }
+    .default{
+        display: none;
+    }
+}
+
+.newsletterAbo .emailInput #newsletterBtn .success{
+    display: none;
+}
+
+.newsletterAbo .emailInput #newsletterBtn.error{
+    border-bottom: 3px solid vars.$errorColor;
+}
+
+.newsletterAbo .emailInput:has(#newsletterBtn.success) #emailNewsletter{
+    border-bottom: 3px solid vars.$successColor;
+}
+
+.newsletterAbo .emailInput:has(#newsletterBtn.success) #newsletterBtn{
+    background-color: vars.$successColor;
+}
+
+#rights{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-size: 0.8em;
+    padding: 0px;
+    margin: 0px;
+}
+
+#rights a{
+    color: vars.$teamColor;
+    text-decoration: none;
+    cursor: pointer;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+}
+
+#rights a:hover{
+    color: darken(vars.$teamColor, 10%);
+}
+
+#rights a:active{
+    color: lighten(vars.$teamColor, 10%);
+}
+
+@media (width < 1650px){
+    #footers{
+        flex-direction: column;
+    }
+
+    #footers .contactFormFooter,
+    #footers .footerMenu,
+    #footers .newsletterAbo{
+        width: 95%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .mobile{
+        container-type: inline-size;
+    }
+
+    .mobile a{
+        text-wrap: nowrap;
+    }
+
+    @container (width < 450px){
+        .mobile .mobileSecondPart{
+            display: none;
+            text-wrap: wrap;
+        }
+    }
+
+
+
+}
+
+@media (width < 450px) {
+    #footers .newsletterAbo .emailInput{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, min-content);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px; 
+    }
+
+    #footers .newsletterAbo .emailInput #emailNewsletter{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #footers .newsletterAbo .emailInput #newsletterBtn{
+        grid-area: 2 / 1 / 3 / 2;
+        border-radius: 10px;
+    }
+
+}

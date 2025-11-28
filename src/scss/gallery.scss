@@ -1,0 +1,39 @@
+@use "./Settings.scss" as settings;
+@use "./Variables.scss" as vars;
+
+#gallery{
+    @extend .defaultMainElement;
+    display: flex;
+    flex-direction: column;
+    padding-block: calc(vars.$elementMarginMainPage / 2);
+
+    .imageWrapper{
+        @extend .imageFade20;
+        width: 100%;
+    }
+    
+
+    .imageWrapper{
+        width: var(--width);
+        height: var(--height);
+    }
+
+    .imageWrapper img, .imageWrapper iframe{
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: vars.$elementAspectRatio;
+    }
+
+
+    .text{
+        @extend .defaultElementOnMainPage;
+        text-align: justify;
+        align-self: center;
+    }
+}
+
+@media (width < 600px){
+    #gallery img, #gallery iframe{
+        aspect-ratio: 16/7 !important;
+    }
+}

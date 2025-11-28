@@ -1,0 +1,120 @@
+@use "./Variables.scss" as vars;
+@use "./Settings.scss" as settings;
+
+// #whatIsSTEMRacing{
+//     width: 100%;
+//     height: auto;
+//     display: grid;
+//     grid-template-columns: 30% 70%;
+//     grid-template-rows: min-content min-content;
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px; 
+//     padding-block: vars.$elementSpacing;
+//     margin-block: vars.$elementMarginMainPage;
+// }
+
+// #whatIsSTEMRacing h1{
+//     @extend .title;
+//     grid-area: 1 / 1 / 2 / 3;
+//     justify-self: center;
+//     align-self: center;
+//     font-size: 3em;
+//     color: vars.$textColor;
+//     @if(settings.$useLetterSpacingInHeaders == 1){
+//         letter-spacing: 2px;
+//     }
+// }
+
+// #whatIsSTEMRacing img{
+//     grid-area: 2 / 1 / 3 / 2;
+//     max-width: 100%;
+//     max-height: 100%;
+//     user-select: none;
+//     padding: 5%;
+//     justify-self: center;
+//     align-self: center;
+// }
+
+// #whatIsSTEMRacing p{
+//     grid-area: 2 / 2 / 3 / 3;
+//     color: vars.$textColor;
+//     justify-self: center;
+//     align-self: center;
+//     padding-block: 1%;
+//     padding-inline: 5%;
+//     font-size: 1.5em;
+//     line-height: 2.5rem;
+//     font-family: "Poppins";
+//     @if(settings.$useLetterSpacing == 1){
+//         letter-spacing: 2px;
+//     }
+//     margin: 0;
+// }
+
+// @media (width < 1200px) {
+//     #whatIsSTEMRacing{
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: repeat(3, auto);
+//         grid-column-gap: 0px;
+//         grid-row-gap: 0px; 
+//     }
+
+//     #whatIsSTEMRacing h1{
+//         grid-area: 1 / 1 / 2 / 2;
+//     }
+
+//     #whatIsSTEMRacing img{
+//         grid-area: 2 / 1 / 3 / 2;
+//         width: 70%;
+//     }
+
+//     #whatIsSTEMRacing p{
+//         grid-area: 3 / 1 / 4 / 2;
+//     }
+
+//     #whatIsSTEMRacing h1{
+//         font-size: 3em * settings.$scaleFontSizeMobile;
+//     }
+
+//     #whatIsSTEMRacing p{
+//         font-size: 1.5em * settings.$scaleFontSizeMobile;
+//         line-height: 2.5rem * settings.$scaleFontSizeMobile;
+//     }
+
+// }
+
+
+#whatIsStemRacing{
+    @extend .defaultMainElement;
+    @if(settings.$useLetterSpacing == 1){
+        letter-spacing: 2px;
+    }
+    display: flex;
+    flex-direction: column;
+    padding-block: calc(vars.$elementMarginMainPage / 2);
+}
+
+#whatIsStemRacing .imageWrapper{
+    width: var(--width);
+    height: var(--height);
+}
+
+#whatIsStemRacing img, #whatIsStemRacing iframe{
+    @extend .imageFade15;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: vars.$elementAspectRatio;
+}
+
+@media (width < 600px){
+    #whatIsStemRacing img, #whatIsStemRacing iframe{
+        aspect-ratio: 16/7 !important;
+    }
+}
+
+#whatIsStemRacing .text{
+    @extend .defaultElementOnMainPage;
+    align-self: center;
+    margin: 0;
+}

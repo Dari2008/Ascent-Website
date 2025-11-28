@@ -1,0 +1,38 @@
+@use "./Variables.scss" as vars;
+@use "./Settings.scss" as settings;
+
+#gofundme{
+    @extend .defaultMainElement;
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(vars.$elementMarginMainPage / 2);
+    padding-bottom: vars.$elementMarginMainPage;
+}
+
+#gofundme .imageWrapper{
+    @extend .imageFade30;
+    width: 100%;
+}
+
+#gofundme .imageWrapper{
+    width: var(--width);
+    height: var(--height);
+}
+
+#gofundme img, #gofundme iframe{
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: vars.$elementAspectRatio;
+}
+
+#gofundme .text{
+    @extend .defaultElementOnMainPage;
+    align-self: center;
+    margin: 0;
+}
+
+@media (width < 600px){
+    #gofundme img, #gofundme iframe{
+        aspect-ratio: 16/7 !important;
+    }
+}

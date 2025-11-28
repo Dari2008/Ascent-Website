@@ -1,0 +1,121 @@
+@use "../../src/scss/Variables.scss" as *;
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+html, body{
+    background: $gray-800;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    outline: none !important;
+    border: none !important;
+}
+
+body{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $gray-800;
+    color: $white;
+}
+
+body .centerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    z-index: 1;
+}
+
+.bgLogo{
+    position: fixed;
+    height: 90%;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+body h1{
+    font-family: "Agrandir Bold";
+    margin-top: 1em;
+    font-size: 2.5em;
+}
+
+body a{
+    color: $teamColor;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body a:hover{
+    text-decoration: underline;
+}
+
+body a:visited{
+    color: $teamColor;
+}
+
+*{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url(../../src/fonts/AgrandirBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../src/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+#close{
+    font-size: 3em;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background:transparent;
+    cursor: pointer;
+    color: $teamColor;
+}
+
+#close:hover{
+    color: lighten($teamColor, 20%);
+}
+
+#close:active{
+    color: darken($teamColor, 20%);
+}
+
+h3{
+    text-decoration: underline;
+}

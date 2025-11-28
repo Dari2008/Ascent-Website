@@ -1,0 +1,5 @@
+@use "./Variables.scss" as *;
+
+html, body{
+    background: $gray-800;
+}

@@ -1,0 +1,317 @@
+@use "../../src/scss/Variables.scss" as *;
+@use "../../src/scss/Settings.scss" as *;
+@use "../../src/scss/bgStyles.scss" as *;
+@use "../../src/scss/clamp.scss" as *;
+@use "sass:math";
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+body{
+    display: grid;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center #introText, .center #introText2{
+    width: 80%;
+}
+
+#introText2{
+    margin-top: 3em;
+}
+
+#introText, #introText2{
+    font-family: "Poppins";
+    color: $textColor;
+    font-size: clampW(0.6em, 1.5em, 200px, 2000px);
+    // line-height: clampW(1.9em, 2em, 200px, 2000px);
+    line-height: 1.6em;
+    text-align: justify;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+p[langpath="theCar.introTextDesignProcess"]{
+    margin-top: 2em;
+}
+
+h1 {
+    @extend .title;
+    font-family: "Agrandir Bold";
+    font-size: clampW(1.3em, 3em, 200px, 2000px);
+    line-height: clampW(1.9em, 2em, 200px, 2000px);
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerDiv {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.headerImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.headerImage {
+    position: absolute;
+    width: 100vw !important;
+}
+
+.headerDiv video, .headerDiv img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.headerDiv::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: $imageFadeOut;
+}
+
+.analysis img{
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+}
+
+.analysis h2{
+    font-family: "Agrandir Bold";
+    font-size: 2rem;
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.analysis{
+    margin-top: 5em;
+    width: 80%;
+    justify-self: center;
+}
+
+.analysis p{
+    color: $textColor;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+.analysis.imageLeft,
+.analysis.imageRight {
+    display: grid;
+    grid-template-columns: auto 40vw;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.analysis.imageLeft p {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: justify;
+    align-self: center;
+}
+
+.analysis.imageLeft img {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.analysis.imageLeft h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+
+
+
+.analysis.imageRight p {
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: justify;
+    align-self: center;
+}
+
+.analysis.imageRight img {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.analysis.imageRight h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+
+
+.analysis.imageCenter {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto 30vh auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.analysis.imageCenter h2 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.analysis.imageCenter img {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.analysis.imageCenter p {
+    grid-area: 3 / 1 / 4 / 3;
+    text-align: justify;
+    justify-self: center;
+    align-self: center;
+}
+
+#thrusts{
+    img{
+        max-width: 100%;
+        margin-block: 5em;
+        margin-bottom: 2em;
+    }
+}
+
+#designProcess img{
+    margin: 3em auto;
+    display: flex;
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+#thrusts, #designProcess{
+    max-width: 80vw;
+    margin: 0 auto;
+    width: 80vw;
+
+    // summary::marker{
+    //     display: none;
+    //     opacity: 0;
+    // }
+
+    details details{
+        background-color: $teamColorSecondary4;
+    }
+
+    details{
+        background: $teamColorSecondary3;
+        padding: 20px;
+        border-radius: 20px;
+        margin-block: 1em;
+    }
+
+    details summary{
+        @extend .title;
+        font-family: "Agrandir Bold";
+        font-size: clampW(0.9em, 1.6em, 200px, 2000px);
+        color: $teamColor;
+        text-align: start;
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+    }
+
+    details summary::before,
+    details summary::after {
+        content: '';
+        transition: 200ms;
+    }
+
+    details summary::before,
+    details summary::after {
+        width: .75em;
+        height: 0;
+        border-bottom: 2px solid;
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    details summary::after{
+        transform: rotate(90deg);
+        transform-origin: 50% 50%;
+    }
+
+    details details[open] summary::after {
+        transform: rotate(0deg);
+    }
+
+    details[open] > summary::after {
+        transform: rotate(0deg);
+    }
+
+
+
+    details p{
+        font-family: "Poppins";
+        color: $textColor;
+        width: 80%;
+        font-size: clampW(0.6em, 1.3em, 200px, 2000px);
+        line-height: 1.6em;
+        text-align: justify;
+        align-self: center;
+        margin: 0 auto;
+    }
+}
+
+#designProcess details:last-of-type{
+    margin-bottom: 3em;
+}
+
+details div,
+details p,
+details details,
+details details summary{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+details[open] div,
+details[open] p,
+details[open] details,
+details[open] details summary{
+    transition: max-height 1s ease-in-out;
+    max-height: 10000px;
+}
+
+@media (width < #{600 * math.div($iframeWidthInPercent, 100%)}px){
+    .headerDiv, .headerImage{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/7;
+    }
+}
+
+@media (width < 800px){
+    .visible .headerDiv, .visible .headerImage{
+        aspect-ratio: 16/9 !important;
+        width: 100%;
+        height: auto;
+    }
+}

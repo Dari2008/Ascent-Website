@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="overflowWhenVisible">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title langPath="theCar.titleDoc">The Car</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./scss/allStyles.css' vite-ignore>
+</head>
+
+<body>
+
+    <div class="headerDiv">
+        <!-- <img src="./imgs/coverMainPage.jpg" alt="Car" vite-ignore> -->
+        <video src="./videos/CarReveal.mp4" class="headerImage" loop disablepictureinpicture id="carReveal" muted playsinline vite-ignore></video>
+        <img src="./videos/CarReveal.jpg" alt="Car reveal" class="headerImage img" loading="lazy" vite-ignore>
+    </div>
+
+    <h1 langPath="theCar.title">The Car</h1>
+    <p langPath="theCar.introText" id="introText">
+        To appropriately understand the design of our car, we first have to clarify what forces apply on the car.
+    </p>
+
+    <img src="" alt="">
+
+    <div id="thrusts">
+        <img src="./imgs/AutoForcesNeu.png" alt="Car Forces" id="forcesImage" loading="lazy" vite-ignore>
+        <script>
+            const forcesImage = document.getElementById("forcesImage");
+            const imageWidth = 1460;
+            const imageHeight = 270;
+            const squares = [
+                {
+                    x: 0,
+                    y: 148,
+                    w: 190,
+                    h: 95,
+                    id: "airResistance"
+                },
+                {
+                    x: 335,
+                    y: 150,
+                    w: 470,
+                    h: 80,
+                    id: "frictionBallBearings"
+                },
+                {
+                    x: 910,
+                    y: 20,
+                    w: 490,
+                    h: 95,
+                    id: "forwardThrust"
+                }
+            ];
+
+            const getNormalizedXY = (e)=>{
+                const rect = forcesImage.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const width = rect.width;
+                const height = rect.height;
+
+                const normalizedX = (x / width) * imageWidth;
+                const normalizedY = (y / height) * imageHeight;
+                return { normalizedX, normalizedY };
+            };
+
+            forcesImage.addEventListener("mousemove", (e)=>{
+                const { normalizedX, normalizedY } = getNormalizedXY(e);
+
+                let hovering = false;
+
+                squares.forEach((square) => {
+                    if (normalizedX >= square.x && normalizedX <= square.x + square.w && normalizedY >= square.y && normalizedY <= square.y + square.h) {
+                       hovering = true;
+                    }
+                });
+
+                forcesImage.style.cursor = hovering ? "pointer" : "default";
+
+            });
+
+            forcesImage.addEventListener("click", (e) => {
+                const { normalizedX, normalizedY } = getNormalizedXY(e);
+
+                squares.forEach((square) => {
+                    if (
+                        normalizedX >= square.x &&
+                        normalizedX <= square.x + square.w &&
+                        normalizedY >= square.y &&
+                        normalizedY <= square.y + square.h
+                    ) {
+                        const details = document.getElementById(square.id);
+                        if (details) {
+                            details.open = !details.open;
+                        }
+                    }
+                });
+            });
+
+        </script>
+        <details id="forwardThrust">
+            <summary langPath="theCar.titles.forwardThrust">Forward thrust from the CO2 cartridge</summary>
+            <p langPath="theCar.forwardThrustText">
+                Stored in the cartridge are 8 grams of CO2 gas. As space in the chamber is limited, the gas inside is
+                compressed and the pressure is high. When the cartridge is penetrated, gas releases at the back of the
+                container. With Newton&#8217;s third law of motion (actio = reactio) it can be explained that the motion
+                of the gas in one direction leads to a motion of the car into the other direction.
+            </p>
+        </details>
+        <details id="airResistance">
+            <summary langPath="theCar.titles.airResistance">Air resistance</summary>
+            <p langPath="theCar.airResistanceText">
+                Enzo Ferrari once said, “Aerodynamics are for people who can&#8217;t build engines.”
+                Due to the technical regulations implemented by STEM Racing we&#8217;re not allowed to modify the
+                accelerating force. Therefore, the quote from Enzo Ferrari doesn&#8217;t apply for STEM Racing and we
+                focus on minimizing drag and optimizing components to ensure a fast track time without modifying the
+                accelerating force.
+                To minimize the drag coefficient, which is a value that puts into number, how streamlined an object is,
+                we use various CFD analysis techniques. CFD stands for Computational Fluid Dynamics and one of the
+                techniques we use is the combined flow visualisation. It combines the conventional streamline
+                visualisation with the vector contour plot. The advantage of this technique is that it brings together
+                both concepts to get a better understanding of the air&#8217;s direction of movement and at what speed
+                the air moves. With this knowledge we can optimise the shape of the car&#8217;s components to make them
+                more streamlined (= lower the drag coefficient). Another technique we use is the drag analysis. With
+                this type of CFD analysis you can calculate the drag coefficient. Additionally, there are various other
+                important CFD analysis techniques that we will not discuss here.
+            </p>
+        </details>
+        <details id="frictionBallBearings">
+            <summary langPath="theCar.titles.frictionOfWheels">Friction of wheels while rotating</summary>
+            <p langPath="theCar.frictionOfWheelsText">
+                Another force stopping the car is the friction between the rotating wheels and the fixed part of the
+                axle construction. To minimise the friction between these components, we use ball bearings. Testing
+                different ball bearings and axle constructions is a crucial part of real-life testing, because it is
+                hardly possible to simulate the axial forces acting on the ball bearings and the wear of different ball
+                bearing models and manufacturers.
+            </p>
+        </details>
+    </div>
+
+    <p langPath="theCar.introTextDesignProcess" id="introText2">
+        To get a better understanding of our design process, we sectioned it into three aspects:
+    </p>
+
+    <div id="designProcess">
+        <details>
+            <summary langPath="theCar.titles.earodynamics">Aerodynamic improvements (CFD analysis)</summary>
+            <p langPath="theCar.earodynamicsText">
+                Aerodynamic research and development (CFD analysis)<br>
+                In this section we will show you our design process on the example of our side pods.
+                To understand the design of our car&#8217;s side pods, we first need to clarify their function.
+            </p>
+            <details>
+                <summary langPath="theCar.titles.redirectionAirflow">Redirection of airflow behind the front wheels</summary>
+                <p langPath="theCar.redirectionAirflowText">
+                    The primary goal of the side pod is to guide the airflow behind the open volume of the front wheels away
+                    from the rear wheels. Additionally, the side pods should prevent the unavoidable turbulent air created
+                    in the wake of the front wheels from interfering with laminar flow areas further downstream.
+                </p>
+            </details>
+            <p langpath="theCar.variants">
+                In the following sections different side pod designs are shown:
+            </p>
+            <details>
+                <summary langPath="theCar.titles.concaveSidePod">Concave Side Pod</summary>
+                <div>
+                    <img src="./imgs/analysis/concave_side_pod_with_full_use_of_width.40.png" alt="Inward Side pod Design" loading="lazy" vite-ignore>
+                    <p langPath="theCar.concaveSidePod">
+                        Our first idea was to extend
+                        the ramp to its maximum width while
+                        retaining the concave profile.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary langPath="theCar.titles.largelyConvexSidePod">Largely Convex Side Pod</summary>
+                <div>
+                    <img src="./imgs/analysis/final side pod (concon).42.png" alt="Middle Side pod Design" loading="lazy" vite-ignore>
+                    <p langPath="theCar.largelyConvexSidePod">
+                        In the following version, the ramp
+                        was reshaped from concave into a
+                        largely convex form, which resulted in
+                        a reduction in drag.
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary langPath="theCar.titles.lcspwasf">Largely Convex Side Pod with Additional Side Foil</summary>
+                <div>
+                    <img src="./imgs/analysis/concon_with_parallel_side_foil.41.png" alt="Outward Side pod Design" loading="lazy" vite-ignore>
+                    <p langPath="theCar.lcspwasf">
+                            Building on this, a third configuration
+                            added a side foil to guide the airflow
+                            more effectively around the rear wheel
+                            but this led to a slightly higher drag 
+                            due to interferences between the side 
+                            foil and the side pod.
+                    </p>
+                </div>
+            </details>
+            <!-- <details>
+                <summary langPath="theCar.titles.splitterPlates">Addition of splitter plates</summary>
+                <div>
+                    <img src="./imgs/analysis/sidepod with splitter plate.png" alt="Splitter Plate Design" loading="lazy" vite-ignore>
+                    <p langPath="theCar.splitterPlatesText">
+                        To further improve the design of our side pods, we added a splitter plate between the wheel wake flow
+                        and the laminar side flow. This prevents the exchange of turbulent and laminar airflow.
+                    </p>
+                </div>
+            </details> -->
+        </details>
+        <details>
+            <summary langPath="theCar.titles.weightReduction">Weight reduction</summary>
+            <p langPath="theCar.weightReductionText">
+                As there is a fixed amount of force emitted from the CO2 cartridge, it is important to make the car as
+                lightweight as possible while still maintaining the minimum weight of 55 grams. Newton&#8217;s second
+                law of motion (F = ma) describes that the less an object weighs, the higher is its acceleration when
+                applying a certain force.
+                To reach the minimum weight of the cars, we make them hollow on the inside to save weight. As the
+                freedom of design is very good, we use SLS printing to produce our chassis. It is easier than milling it
+                with polyurethane (special hard foam block) because there are less parameters to consider.
+            </p>
+        </details>
+        <details>
+            <summary langPath="theCar.titles.stabilityComponents">Stability of components (FEA)</summary>
+            <img src="./imgs/analysis/Kopie von 4.png" alt="Analysen" loading="lazy" vite-ignore>
+            <p langPath="theCar.stabilityComponentsText">
+                To continually make sure that the wheels, the halo and other components are stable enough to withstand
+                the pressure of impact, we virtually test them with the FEA.
+                The Finite Element Analysis is a simulation that predicts how structures react to forces like stress,
+                heat and vibration. Complex models are divided into smaller elements, forces applying on the car are
+                defined and equations, considering the structural integrity of materials, are solved. After solving the
+                simulation, it is shown if the material is strong enough to withstand a certain force.
+            </p>
+        </details>
+        </details>
+    </div>
+
+    <script>
+        // const details = document.querySelectorAll("details");
+        // details.forEach((el) => {
+        // el.addEventListener("toggle", () => {
+        //     const content = el.querySelector("div");
+        //     if (!content) return;
+
+        //     if (el.open) {
+        //         const height = content.scrollHeight;
+        //         content.style.maxHeight = height + "px";
+        //     } else {
+        //         content.style.maxHeight = "0";
+        //     }
+        // });
+        // });
+    </script>
+
+    {{{FOOTER}}}
+
+    <!-- <div class="analysis imageCenter">
+            <h2>Analysis</h2>
+            <img src="../src/imgs/carReveal/8k Rendering.png" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sunt eum omnis, magni, odit, vero molestiae reiciendis maxime impedit expedita excepturi aliquid quos quam. Sint nam nemo voluptas aut eos.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum quaerat tempora voluptatem consectetur deserunt qui reprehenderit natus, incidunt necessitatibus, ducimus quos cupiditate eveniet. Aut repellat culpa illo enim facere.
+            </p>
+        </div> -->
+
+</body>
+
+</html>

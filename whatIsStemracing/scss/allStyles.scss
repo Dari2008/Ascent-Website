@@ -1,0 +1,92 @@
+@use "../../src/scss/Variables.scss" as *;
+@use "../../src/scss/Settings.scss" as *;
+@use "../../src/scss/bgStyles.scss" as *;
+@use "../../src/scss/clamp.scss" as *;
+@use "sass:math";
+
+@font-face {
+    font-family: "Agrandir Bold";
+    src: url("../../src/fonts/AgrandirBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../src/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p, li{
+    @extend .defaultElementOnMainPage;
+    @extend .defaultMainElement;
+    padding: 0px;
+}
+
+ul{
+    list-style: disclosure-closed;
+    list-style-position: inside;
+    padding-left: 10%;
+}
+
+li::marker{
+    color: $teamColor;
+    font-size: 1.5em;
+}
+
+h1{
+    font-family: "Agrandir Bold";
+    font-size: clampW(1em, 2.5em, 200px, 20000px);
+    color: $teamColor;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.headerDiv{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.headerImage{
+    transition: all $animationTime ease-in-out;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.headerDiv::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: $imageFadeOut;
+}
+
+p:last-of-type{
+    margin-bottom: 2em;
+}
+
+@media (width < #{600 * math.div($iframeWidthInPercent, 100%)}px){
+    .headerDiv, .headerImage{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/7;
+    }
+}
+
+@media (width < 800px){
+    .visible .headerDiv, .visible .headerImage{
+        aspect-ratio: 16/9 !important;  
+        width: 100%;
+        height: auto;
+    }
+}
