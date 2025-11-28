@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 /gallery/imgs/photos/**
 /gallery/imgs/videos/**
-/php/** 
+/src/php/** 
