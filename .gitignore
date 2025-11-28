@@ -25,4 +25,7 @@ dist-ssr
 /gallery/imgs/photos/**
 /gallery/imgs/videos/**
 /src/php/** 
+/src/imgs/carReveal/**
+/src/imgs/documentsPrices/**
+/theCar/imgs/**
 **/php/**
