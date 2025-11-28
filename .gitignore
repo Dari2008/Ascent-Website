@@ -25,3 +25,4 @@ dist-ssr
 /gallery/imgs/photos/**
 /gallery/imgs/videos/**
 /src/php/** 
+**/php/**
